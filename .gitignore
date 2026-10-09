@@ -1,0 +1,7 @@
+.env
+__pycache__/
+data/update_*.log
+data/backfill.log
+data/scope_run.log
+data/weekly_run.log
+data/cron.log

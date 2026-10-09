@@ -1,0 +1,37 @@
+name: 每周更新CRLM周报
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"   # 每周一 01:00 UTC（北京时间周一 09:00）
+  workflow_dispatch:        # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install requests pyyaml jinja2 python-dotenv
+
+      - name: 运行周报更新
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: python3 update.py --days 7
+
+      - name: 提交并发布
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/ data/
+          git commit -m "weekly update $(date +%F)" || echo "无变更"
+          git push

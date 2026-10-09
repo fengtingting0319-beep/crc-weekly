@@ -1,0 +1,33 @@
+# 肠癌肝转移文献周报 配置文件
+# 每周运行: python update.py            (抓取过去 7 天)
+# 首次回填: python update.py --days 28
+
+window_days: 7          # 默认抓取时间窗（天）
+max_pubmed: 800         # PubMed 单次最多抓取条数（肠癌全域文献量较大）
+
+# PubMed 检索式（肠癌为主体，肝转移为重点亚方向，不再强制肝转移限定）
+pubmed_query: >-
+  ("colorectal neoplasms"[MeSH] OR colorectal[tiab] OR "colon cancer"[tiab]
+  OR "rectal cancer"[tiab] OR "bowel cancer"[tiab] OR "colorectal cancer"[tiab])
+
+# 指南与共识检索式（肠癌主题 + 指南/共识限定；含中国专家共识的英文版及国际指南）
+guideline_query: >-
+  ("colorectal neoplasms"[MeSH] OR colorectal[tiab] OR "colon cancer"[tiab]
+  OR "rectal cancer"[tiab] OR "bowel cancer"[tiab] OR "colorectal cancer"[tiab])
+  AND ("Practice Guideline"[pt] OR "Guideline"[pt] OR consensus[ti] OR guideline[ti])
+
+# 预印本过滤关键词（标题+摘要需同时命中肿瘤侧与肝转移侧各至少一个）
+preprint_onco_keywords: [colorect, colon cancer, rectal cancer, bowel cancer, crc]
+preprint_mets_keywords: [liver metastas, hepatic metastas, liver tropism, hepatic tropism]
+
+# 临床试验检索条件（肠癌全域，肝转移试验在页面中标注）
+ctg_condition: "colorectal cancer"
+chictr_keyword: "colorectal"
+
+# 大模型 API（OpenAI 兼容协议）。未配置 key 时自动回退到规则模式。
+# 环境变量: LLM_API_KEY / LLM_BASE_URL / LLM_MODEL
+llm_base_url_default: "https://api.deepseek.com"
+llm_model_default: "deepseek-chat"
+
+# 主题分类（顺序即展示顺序）
+categories: [外科手术, 系统治疗, 局部治疗, 转化研究, 生物标志物, 预后模型, 综合及其他]

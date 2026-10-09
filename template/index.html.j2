@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>结直肠癌研究周报 · {{ window_start }} 至 {{ window_end }}</title>
+<style>
+:root{
+  --navy:#0b2545; --navy2:#134074; --blue:#1d6fb8; --blue-light:#e8f1fa;
+  --bg:#f4f6f9; --card:#ffffff; --text:#1e293b; --muted:#64748b;
+  --border:#e2e8f0; --gold:#b45309;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Liberation Sans","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto}
+h2.sec{scroll-margin-top:110px;font-size:19px;color:var(--navy);border-left:4px solid var(--blue);padding-left:11px;margin:34px 0 6px}
+.sec-sub{font-size:13px;color:var(--muted);margin-bottom:14px}
+
+/* 页头 */
+header{background:linear-gradient(120deg,var(--navy) 0%,var(--navy2) 55%,var(--blue) 100%);color:#fff;padding:34px 20px 30px}
+header.collapsed{display:none}
+header h1{font-size:26px;font-weight:700}
+header .sub{margin-top:10px;font-size:13.5px;opacity:.92}
+header .sub b{font-weight:700}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.pill{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 15px;font-size:12.5px}
+.statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:20px}
+.stat{background:#fff;color:var(--text);border-radius:12px;padding:14px 16px;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.stat b{display:block;font-size:24px;color:var(--navy)}
+.stat span{font-size:12.5px;color:var(--muted)}
+
+/* 顶部导航栏 */
+.topnav{position:sticky;top:0;z-index:110;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.topnav .wrap{display:flex;gap:6px;align-items:center;padding:8px 20px;flex-wrap:nowrap;overflow-x:auto}
+.topnav .logo{flex:0 0 auto;display:flex;align-items:center;gap:8px;margin-right:10px}
+.topnav .logo .ic{width:26px;height:26px;border-radius:7px;background:var(--blue);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.topnav .logo b{color:var(--navy);font-size:15.5px;white-space:nowrap}
+.topnav a.nl{flex:0 0 auto;padding:6px 13px;border-radius:8px;font-size:13.5px;color:var(--muted);white-space:nowrap;text-decoration:none !important}
+.topnav a.nl:hover{color:var(--blue);background:var(--blue-light)}
+.topnav a.nl.active{color:var(--blue);background:var(--blue-light);font-weight:700}
+.topnav a.nl b{color:inherit}
+.topnav .dates{margin-left:auto;flex:0 0 auto;font-size:13px;color:var(--muted);white-space:nowrap;padding-left:10px}
+
+/* 置顶工具栏 */
+.toolbar{position:sticky;top:52px;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);box-shadow:0 2px 8px rgba(15,35,70,.06)}
+.toolbar .wrap{display:flex;gap:12px;align-items:center;padding:10px 20px;flex-wrap:wrap}
+.brand{font-weight:700;color:var(--navy);white-space:nowrap}
+.brand small{font-weight:400;color:var(--muted);margin-left:8px;font-size:12px}
+.toolbar input[type=search]{flex:1;min-width:200px;padding:9px 16px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;outline:none}
+.toolbar input[type=search]:focus{border-color:var(--blue)}
+.count{font-size:13px;color:var(--muted);white-space:nowrap}
+.count b{color:var(--navy)}
+.toggle{border:1px solid var(--blue);color:var(--blue);background:#fff;border-radius:8px;padding:7px 14px;font-size:13px;cursor:pointer;white-space:nowrap}
+.toggle:hover{background:var(--blue-light)}
+
+/* 筛选区 */
+.filters{background:#fff;border-bottom:1px solid var(--border);padding:10px 20px 14px}
+.filters.collapsed{display:none}
+.filters .wrap{display:flex;flex-direction:column;gap:8px}
+.frow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.flabel{font-size:13px;color:var(--muted);min-width:34px}
+.chip{padding:4px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;font-size:13px;cursor:pointer;color:var(--muted);user-select:none}
+.chip:hover{border-color:var(--blue);color:var(--blue)}
+.chip.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.seg button{border:none;background:#fff;padding:5px 14px;font-size:13px;cursor:pointer;color:var(--muted);border-right:1px solid var(--border)}
+.seg button:last-child{border-right:none}
+.seg button.active{background:var(--navy);color:#fff}
+select.mini{padding:5px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:#fff;color:var(--text)}
+
+/* 概览与数据面板 */
+.overview{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px 22px;margin:18px 0 6px}
+.overview .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.ov-item{background:var(--blue-light);border-radius:8px;padding:6px 14px;font-size:13px;color:var(--navy2)}
+.ov-item b{font-size:16px}
+.panel{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px;margin:14px 0 6px}
+.panel .box{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+.panel h3{font-size:15px;color:var(--navy);margin-bottom:10px}
+.funnel-item{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:13px}
+.funnel-item .bar{height:14px;background:var(--blue);border-radius:3px;opacity:.75}
+.funnel-item .lab{color:var(--muted);min-width:150px}
+.funnel-item .val{font-weight:700;color:var(--navy)}
+.funnel-item.excl .bar{background:#cbd5e1}
+.check{font-size:12px;color:var(--muted);margin-top:8px}
+.grade-line{display:flex;gap:8px;align-items:baseline;margin-bottom:7px;font-size:13px}
+.grade-line b{font-size:16px}
+.gS{color:#dc2626}.gA{color:#ea580c}.gB{color:#2563eb}.gC{color:#64748b}
+.ifv{font-size:12.5px;margin-bottom:6px}
+.ifv b{color:var(--navy)}
+
+/* Top10 精读 */
+.reading-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px 22px;margin-bottom:14px}
+.reading-card .head{display:flex;gap:18px;align-items:flex-start}
+.reading-card .score{flex:0 0 74px;text-align:center;background:var(--navy);color:#fff;border-radius:10px;padding:10px 6px}
+.reading-card .score b{font-size:24px;display:block;line-height:1.1}
+.reading-card .score span{font-size:11px;opacity:.8}
+.rblock{margin-top:10px;font-size:14px;text-align:justify}
+.rblock .rlab{font-weight:700;color:var(--navy2);margin-right:6px}
+.score-detail{margin-top:10px;font-size:12.5px;color:var(--muted);background:#f8fafc;border:1px solid var(--border);border-radius:8px;padding:8px 12px}
+.score-detail b{color:var(--navy)}
+
+/* 文献卡片 */
+main{max-width:1180px;margin:0 auto;padding:0 20px 20px}
+.week-head{display:flex;align-items:baseline;gap:12px;margin:24px 0 12px;border-bottom:2px solid var(--blue-light);padding-bottom:8px}
+.week-head h3{font-size:17px;color:var(--navy)}
+.week-head .cnt{font-size:13px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 22px;margin-bottom:14px;display:flex;gap:20px;transition:box-shadow .15s}
+.card:hover{box-shadow:0 4px 16px rgba(19,64,116,.12)}
+.ifcol{flex:0 0 86px;text-align:center;border-right:1px dashed var(--border);padding-right:16px}
+.ifcol .num{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.ifcol .lbl{font-size:11.5px;color:var(--muted);margin-top:2px}
+.ifcol .rank{font-size:12.5px;color:var(--gold);font-weight:600;margin-top:6px}
+.ifcol .none{font-size:20px;font-weight:700;color:#94a3b8;margin-top:8px}
+.body{flex:1;min-width:0}
+.badges{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:6px}
+.badge{display:inline-block;padding:1.5px 9px;border-radius:6px;font-size:11.5px;font-weight:600}
+.badge.pre{background:#fce7f3;color:#9d174d}
+.badge.cas{background:#dbeafe;color:#1e40af}
+.badge.cit{background:#f1f5f9;color:#475569}
+.badge.pc{background:#fee2e2;color:#991b1b}
+.title-cn{font-size:16.5px;font-weight:700;line-height:1.45;color:var(--text)}
+.title-en{font-size:14.5px;font-style:italic;color:var(--muted);margin-top:2px}
+.title-en a{color:var(--blue)}
+.meta{margin-top:6px;font-size:13px;color:var(--muted)}
+.meta .jn{color:var(--blue);font-weight:600}
+.insight{margin-top:9px;font-size:14px;color:#334155;text-align:justify;background:#f0f9ff;border-left:3px solid var(--blue);padding:8px 12px;border-radius:0 8px 8px 0}
+.insight .ilab{font-weight:700;color:var(--navy2)}
+.grade-detail{margin-top:8px;font-size:12.5px;color:var(--muted);background:#f8fafc;border:1px solid var(--border);border-radius:8px;padding:7px 12px}
+.grade-detail b{color:var(--navy)}
+details.exp{margin-top:10px;border:1px solid var(--border);border-radius:10px;background:#fafbfd}
+details.exp summary{cursor:pointer;padding:9px 14px;font-size:13px;color:var(--blue);font-weight:600;list-style:none}
+details.exp summary::before{content:"▸ ";color:var(--blue)}
+details.exp[open] summary::before{content:"▾ "}
+details.exp .abs{padding:2px 14px 12px}
+.abs-tag{font-size:12px;letter-spacing:1px;color:var(--muted);font-weight:700;margin-bottom:6px}
+.abs-text{font-size:13.5px;color:#475569;background:#fff;border:1px solid var(--border);border-radius:8px;padding:12px 14px;text-align:justify}
+.btns{margin-top:10px;display:flex;gap:10px}
+.btn{display:inline-block;padding:6px 18px;border-radius:8px;font-size:13.5px;font-weight:600;color:#fff !important;text-decoration:none !important}
+.btn.pm{background:#2563eb}
+.btn.doi{background:#1d6fb8}
+.ids{margin-top:10px;font-size:12.5px;color:var(--muted)}
+.empty{text-align:center;color:var(--muted);padding:60px 0;font-size:15px}
+
+/* 试验表 */
+.trials-sec{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin:14px 0 6px}
+.ttable{width:100%;border-collapse:collapse;font-size:13.5px}
+.ttable th{background:var(--blue-light);color:var(--navy);text-align:left;padding:9px 10px;font-size:13px;white-space:nowrap}
+.ttable td{padding:9px 10px;border-top:1px solid var(--border);vertical-align:top}
+.ttable tr:hover td{background:#f8fafc}
+.ttable .nct a{font-weight:600;white-space:nowrap}
+.ttable .ttitle{min-width:260px}
+.ttable .ttitle .en{display:block;font-size:12px;color:var(--muted);font-style:italic;margin-top:2px}
+.ttable .st{white-space:nowrap}
+.ttable .st.closed{color:#94a3b8}
+.ttable .enroll{text-align:right;white-space:nowrap}
+.ttable .phase{white-space:nowrap}
+.ttable .interv{min-width:180px;color:#475569}
+.badge.new{background:#fef3c7;color:#92400e}
+@media (max-width:900px){.ttable .interv,.ttable .enroll{display:none}.panel{grid-template-columns:1fr}}
+
+/* 热点 */
+.hotspots{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin:14px 0 6px}
+.hotspots ol{margin-left:20px}
+.hotspots li{margin-bottom:10px;font-size:14px;color:#334155;text-align:justify}
+
+/* 检索式 */
+.methods{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin:14px 0 6px}
+.methods h3{font-size:15px;color:var(--navy);margin:12px 0 6px}
+.methods .desc{font-size:13px;color:var(--muted);margin-bottom:8px}
+.qbox{position:relative;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 90px 14px 16px;font-size:12.5px;font-family:"SFMono-Regular",Consolas,monospace;word-break:break-all;margin-bottom:14px}
+.copybtn{position:absolute;top:10px;right:10px;background:var(--blue);color:#fff;border:none;border-radius:6px;padding:5px 14px;font-size:12.5px;cursor:pointer}
+.copybtn:hover{background:var(--navy2)}
+footer{max-width:1180px;margin:0 auto;padding:24px 20px 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer p{margin-bottom:6px}
+@media (max-width:640px){
+  header h1{font-size:19px}
+  .card{flex-direction:column;gap:8px;padding:14px}
+  .ifcol{flex:none;border-right:none;border-bottom:1px dashed var(--border);padding:0 0 8px;display:flex;gap:10px;align-items:baseline}
+}
+</style>
+</head>
+<body>
+
+<header id="pagehead">
+  <div class="wrap">
+    <h1>结直肠癌研究周报</h1>
+    <div class="sub">
+      检索窗口：<b>{{ window_start }} 至 {{ window_end }}</b>
+      &nbsp;｜&nbsp; 覆盖：结直肠癌全域（肝转移为重点亚方向）的临床诊疗、系统/局部治疗、转化研究与生物标志物
+    </div>
+    <div class="sub" style="opacity:.75">运行日 {{ generated.split()[0] }} · 影响因子口径 JCR {{ if_year }} · 全部条目含真实 PMID / DOI</div>
+    <div class="pills">
+      <span class="pill"><b>{{ stats.n_papers }}</b> 纳入文献（篇）</span>
+      <span class="pill"><b>{{ stats.n_preprints }}</b> 预印本（篇）</span>
+      <span class="pill"><b>{{ stats.n_trials }}</b> 临床试验动态（项）</span>
+      <span class="pill"><b>{{ funnel['pubmed_raw'] + funnel['preprint_raw'] }}</b> 原始检索记录（条）</span>
+      <span class="pill">点右上角「收起页头与筛选」可放大阅读区，选择会记住</span>
+    </div>
+    <div class="statrow">
+      <div class="stat"><b>{{ stats.n_papers }}</b><span>已发表文献</span></div>
+      <div class="stat"><b>{{ stats.n_preprints }}</b><span>预印本</span></div>
+      <div class="stat"><b>{{ stats.n_trials }}</b><span>临床试验动态</span></div>
+      <div class="stat"><b>{{ stats.max_if if stats.max_if is not none else "—" }}</b><span>最高影响因子</span></div>
+      <div class="stat"><b>{{ stats.avg_if if stats.avg_if is not none else "—" }}</b><span>平均影响因子</span></div>
+      <div class="stat"><b>{{ stats.n_no_if }}</b><span>IF 未获取</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="topnav" id="topnav">
+  <div class="wrap">
+    <span class="logo"><span class="ic">周</span><b>结直肠癌研究周报</b></span>
+    <a class="nl active" href="#sec-overview">本期概览</a>
+    <a class="nl" href="#sec-panel">数据面板</a>
+    <a class="nl" href="#sec-top10">精读 Top10</a>
+    <a class="nl" href="#sec-journal">全部文献 <b>{{ stats.n_papers }}</b></a>
+    <a class="nl" href="#sec-preprint">预印本 <b>{{ stats.n_preprints }}</b></a>
+    <a class="nl" href="#sec-trials">临床试验 <b>{{ stats.n_trials }}</b></a>
+    <a class="nl" href="#sec-guidelines">指南与共识 <b>{{ stats.n_guidelines }}</b></a>
+    <a class="nl" href="#sec-hotspots">热点与趋势</a>
+    <a class="nl" href="#sec-methods">方法与检索式</a>
+    <span class="dates">{{ window_start }} → {{ window_end }}</span>
+  </div>
+</nav>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="brand">肠癌周报<small>{{ window_start }} ~ {{ window_end }}</small></span>
+    <input type="search" id="q" placeholder="搜索标题、期刊、启示关键词…">
+    <span class="count">显示 <b id="shown">0</b> / <b id="total">0</b> 条</span>
+    <select class="mini" id="week">
+      <option value="all">全部周次</option>
+      {% for w, _ in week_groups %}<option value="{{ w }}">{{ w | label_display }}</option>{% endfor %}
+    </select>
+    <button class="toggle" id="collapseBtn">收起页头与筛选 ▲</button>
+  </div>
+</div>
+
+<div class="filters" id="filters">
+  <div class="wrap">
+    <div class="frow">
+      <span class="flabel">等级</span>
+      <span class="seg" id="gradeSeg">
+        <button data-grade="all" class="active">全部</button>
+        {% for g in ['S','A','B','C'] %}<button data-grade="{{ g }}">{{ g }}</button>{% endfor %}
+      </span>
+      <span class="flabel" style="margin-left:14px">排序</span>
+      <span class="seg" id="sortSeg">
+        <button data-sort="date" class="active">发表日期 ↓</button>
+        <button data-sort="if">影响因子 ↓</button>
+        <button data-sort="score">重要性评分 ↓</button>
+      </span>
+      <select class="mini" id="src">
+        <option value="all">期刊+预印本</option>
+        <option value="journal">仅期刊论文</option>
+        <option value="preprint">仅预印本</option>
+      </select>
+    </div>
+    <div class="frow">
+      <span class="flabel">主题</span>
+      <span class="chip active" data-cat="all">全部</span>
+      {% for c in categories %}<span class="chip" data-cat="{{ c }}">{{ c }}</span>{% endfor %}
+    </div>
+    <div class="frow">
+      <span class="flabel">类型</span>
+      <span class="chip active" data-type="all">全部</span>
+      {% for t in study_types %}<span class="chip" data-type="{{ t }}">{{ t }}</span>{% endfor %}
+    </div>
+  </div>
+</div>
+
+<main id="list">
+  <!-- 一、本期概览 -->
+  <div class="overview">
+    <h2 class="sec" id="sec-overview" style="margin-top:0">本期概览</h2>
+    <div class="sec-sub">检索口径、去重路径与纳入结果一览</div>
+    <div class="row">
+      <span class="ov-item">PubMed（E-utilities · EDAT）<b>{{ funnel['pubmed_raw'] }}</b> 条</span>
+      <span class="ov-item">bioRxiv/medRxiv 拉取 <b>{{ funnel['preprint_raw'] }}</b> 条 → 肠癌相关 <b>{{ funnel['preprint_kept'] }}</b> 篇</span>
+      <span class="ov-item">ClinicalTrials.gov 更新 <b>{{ funnel['trials_raw'] }}</b> 项</span>
+      <span class="ov-item">三级去重（DOI → PMID → 标题归一化）移除 <b>{{ funnel['dedup_removed'] }}</b> 条</span>
+      <span class="ov-item">无有效摘要排除 <b>{{ funnel['no_abstract'] }}</b> 条</span>
+      <span class="ov-item">最终纳入 <b>{{ funnel['included'] }}</b> 篇</span>
+    </div>
+  </div>
+
+  <!-- 二、数据面板 -->
+  <h2 class="sec" id="sec-panel">数据面板</h2>
+  <div class="sec-sub">证据分级 · 影响因子核实</div>
+  <div class="panel">
+    <div class="box">
+      <h3>纳入文献证据分级（{{ stats.n_papers }} 篇）</h3>
+      {% for g in ['S','A','B','C'] %}
+      <div class="grade-line"><b class="g{{ g }}">{{ stats.grade_counts[g] }}</b> 篇 {{ g }} 级 · {{ grade_defs[g] }}</div>
+      {% endfor %}
+      <div class="check">分级口径：S = 顶刊 IF≥15 或可能改变临床实践；A = 高质量前瞻性/随机研究；B = 单中心回顾性或机制研究；C = 其他纳入文献。预印本不参与分级。</div>
+    </div>
+    <div class="box">
+      <h3>影响因子核实（JCR {{ if_year }}）</h3>
+      {% for j in if_verified[:8] %}
+      <div class="ifv"><b>{{ j['if'] }}</b> · {{ j.journal }}</div>
+      {% endfor %}
+      <div class="check">取本期 IF 最高 8 种期刊；口径为 JCR {{ if_year }}（Clarivate）静态对照表。</div>
+    </div>
+    <div class="box">
+      <h3>本期新增路径</h3>
+      <div class="grade-line"><b>{{ funnel['pubmed_raw'] + funnel['preprint_raw'] }}</b> 条原始检索记录</div>
+      <div class="grade-line">→ 预印本主题不符排除 <b>{{ funnel['preprint_excluded'] }}</b> 条</div>
+      <div class="grade-line">→ 去重移除 <b>{{ funnel['dedup_removed'] }}</b> 条</div>
+      <div class="grade-line">→ 无摘要排除 <b>{{ funnel['no_abstract'] }}</b> 条</div>
+      <div class="grade-line">→ 纳入 <b>{{ funnel['included'] }}</b> 篇 + 试验 <b>{{ stats.n_trials }}</b> 项</div>
+      <div class="check">校验：{{ funnel['pubmed_raw'] + funnel['preprint_raw'] }} − {{ funnel['preprint_excluded'] }} − {{ funnel['dedup_removed'] }} − {{ funnel['no_abstract'] }} = {{ funnel['included'] }}（本期新增口径；全库累计 {{ stats.n_papers + stats.n_preprints }} 篇）</div>
+    </div>
+  </div>
+
+  <!-- 三、Top10 精读 -->
+  <h2 class="sec" id="sec-top10">Top10 精读</h2>
+  <div class="sec-sub">本期重要性评分前 10 · 五维评分（设计 30 / 验证 15 / 机制 15 / 影响力 20 / 契合度 20）· 按总分降序</div>
+  {% for p in top10 %}
+  <div class="reading-card">
+    <div class="head">
+      <div class="score"><b>{{ p.score }}</b><span>/ 100</span></div>
+      <div style="flex:1;min-width:0">
+        <div class="badges">
+          {% if p.grade %}<span class="badge g{{ p.grade }}" style="font-size:13px">{{ p.grade }} 级</span>{% endif %}
+          {% if p.get('topic') == '肝转移' %}<span class="badge" style="background:#fff7ed;color:#c2410c">肝转移</span>{% endif %}
+          <span class="badge" style="background:var(--blue-light);color:var(--navy2)">{{ p.category }}</span>
+          <span class="badge" style="background:#f0fdf4;color:#166534">{{ p.study_type }}</span>
+          {% if p.if_value is not none %}<span class="badge cit">IF {{ p.if_value }}</span>{% endif %}
+        </div>
+        {% if p.cn_title %}<div class="title-cn">{{ p.cn_title }}</div>{% endif %}
+        <div class="title-en"><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a></div>
+        <div class="meta"><span class="jn">{{ p.journal }}</span>{% if p.date %} · {{ p.date }}{% endif %}{% if p.authors %} · {{ p.authors }}{% endif %}</div>
+      </div>
+    </div>
+    {% if p.reading %}
+    <div class="rblock"><span class="rlab">研究背景：</span>{{ p.reading.background }}</div>
+    <div class="rblock"><span class="rlab">核心结果：</span>{{ p.reading.results }}</div>
+    <div class="rblock"><span class="rlab">意义与启示：</span>{{ p.reading.significance }}</div>
+    {% endif %}
+    <div class="score-detail">
+      评分明细：设计 <b>{{ p.design }}</b>/30 · 验证 <b>{{ p.validation }}</b>/15 · 机制 <b>{{ p.mechanism }}</b>/15 · 影响力 <b>{{ p.impact }}</b>/20 · 契合度 <b>{{ p.fit }}</b>/20 = <b>{{ p.score }}</b>/100
+      {% if p.grade_rationale %} ｜ 等级理由：{{ p.grade_rationale }}{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- 四、已发表文献 -->
+  <h2 class="sec" id="sec-journal">已发表文献</h2>
+  <div class="sec-sub">{{ stats.n_papers }} 篇 · 按 S/A/B/C 分级 · 支持等级、主题、类型、关键词筛选与多维排序</div>
+  <div id="journalList">
+    {% for week, items in week_groups %}
+    <section class="week" data-week="{{ week }}">
+      <div class="week-head"><h3>{{ week | label_display }}</h3><span class="cnt"></span></div>
+      {% for p in items %}
+      <div class="card"
+           data-source="{{ p.source }}" data-cat="{{ p.category }}" data-type="{{ p.get('study_type','其他') }}"
+           data-grade="{{ p.get('grade','') }}" data-if="{{ p.if_value if p.if_value is not none else -1 }}"
+           data-score="{{ p.get('score', 0) }}"
+           data-text="{{ (p.title ~ ' ' ~ (p.cn_title or '') ~ ' ' ~ (p.insight or '') ~ ' ' ~ p.journal ~ ' ' ~ (p.abstract or '')) | lower | e }}">
+        <div class="ifcol">
+          {% if p.if_value is not none %}
+          <div class="num">{{ p.if_value }}</div>
+          <div class="lbl">影响因子<br>JCR {{ if_year }}</div>
+          {% if p.rank %}<div class="rank">No.{{ p.rank }}</div>{% endif %}
+          {% else %}
+          <div class="none">—</div>
+          <div class="lbl">IF 未获取</div>
+          {% endif %}
+        </div>
+        <div class="body">
+          <div class="badges">
+            {% if p.grade %}<span class="badge g{{ p.grade }}">{{ p.grade }} 级</span>{% endif %}
+            <span class="badge" style="background:var(--blue-light);color:var(--navy2)">{{ p.category }}</span>
+            {% if p.get('study_type') %}<span class="badge" style="background:#f0fdf4;color:#166534">{{ p.study_type }}</span>{% endif %}
+            {% if p.get('practice_changing') %}<span class="badge pc">或改变临床实践</span>{% endif %}
+            {% if p.cas %}<span class="badge cas" title="中科院分区 {{ cas_year }}">中科院{{ p.cas }}区{% if p.top %}·Top{% endif %}</span>{% endif %}
+            {% if p.citations is not none %}<span class="badge cit">被引 {{ p.citations }}</span>{% endif %}
+          </div>
+          {% if p.cn_title %}<div class="title-cn">{{ p.cn_title }}</div>{% endif %}
+          <div class="title-en"><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a></div>
+          <div class="meta">
+            <span class="jn">{{ p.journal }}</span>
+            {% if p.date %} · {{ p.date }}{% endif %}
+            {% if p.authors %} · {{ p.authors }}{% endif %}
+          </div>
+          <div class="insight"><span class="ilab">意义与启示：</span>{{ p.insight or p.title }}</div>
+          <div class="grade-detail">
+            等级评估：<b>{{ p.grade or "不分级" }}</b>（{{ grade_defs.get(p.grade, "预印本不参与分级") }}）
+            ｜ IF：{{ p.if_value if p.if_value is not none else "未获取" }}
+            ｜ 类型：{{ p.study_type }}
+            {% if p.grade_rationale %}｜ {{ p.grade_rationale }}{% endif %}
+            ｜ 评分：{{ p.score }}/100
+          </div>
+          <details class="exp">
+            <summary>展开英文原题摘要与原文链接</summary>
+            <div class="abs">
+              <div class="abs-tag">ABSTRACT（原文，未删改）</div>
+              <div class="abs-text">{{ p.abstract or p.title }}</div>
+              <div class="btns">
+                {% if p.uid.startswith('pmid:') %}<a class="btn pm" href="https://pubmed.ncbi.nlm.nih.gov/{{ p.uid.split(':')[1] }}/" target="_blank" rel="noopener">PubMed</a>{% endif %}
+                {% if p.doi %}<a class="btn doi" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI 原文</a>{% endif %}
+              </div>
+            </div>
+          </details>
+          <div class="ids">{% if p.doi %}DOI：{{ p.doi }}{% endif %}{% if p.uid.startswith('pmid:') %}{% if p.doi %} &nbsp;｜&nbsp; {% endif %}PMID：{{ p.uid.split(':')[1] }}{% endif %}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endfor %}
+    <div class="empty" id="empty" style="display:none">没有符合筛选条件的条目</div>
+  </div>
+
+  <!-- 五、预印本区 -->
+  <h2 class="sec" id="sec-preprint">预印本区</h2>
+  <div class="sec-sub">{{ stats.n_preprints }} 篇 · bioRxiv / medRxiv · 未经同行评审，不参与 S/A/B/C 分级</div>
+  <div id="preprintList">
+    {% for p in preprints %}
+    <div class="card"
+         data-source="preprint" data-cat="{{ p.category }}" data-type="{{ p.get('study_type','其他') }}"
+         data-grade="" data-if="-1" data-score="{{ p.get('score', 0) }}"
+         data-text="{{ (p.title ~ ' ' ~ (p.cn_title or '') ~ ' ' ~ (p.insight or '') ~ ' ' ~ p.journal ~ ' ' ~ (p.abstract or '')) | lower | e }}">
+      <div class="ifcol"><div class="none">预印</div><div class="lbl">{{ p.server }}</div></div>
+      <div class="body">
+        <div class="badges">
+          <span class="badge pre">{{ p.server }} 预印本</span>
+          {% if p.get('topic') == '肝转移' %}<span class="badge" style="background:#fff7ed;color:#c2410c">肝转移</span>{% endif %}
+          <span class="badge" style="background:var(--blue-light);color:var(--navy2)">{{ p.category }}</span>
+          {% if p.get('study_type') %}<span class="badge" style="background:#f0fdf4;color:#166534">{{ p.study_type }}</span>{% endif %}
+        </div>
+        {% if p.cn_title %}<div class="title-cn">{{ p.cn_title }}</div>{% endif %}
+        <div class="title-en"><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a></div>
+        <div class="meta"><span class="jn">{{ p.journal }}</span>{% if p.date %} · {{ p.date }}{% endif %}{% if p.authors %} · {{ p.authors }}{% endif %}</div>
+        <div class="insight"><span class="ilab">意义与启示：</span>{{ p.insight or p.title }}</div>
+        <details class="exp">
+          <summary>展开英文原题摘要与原文链接</summary>
+          <div class="abs">
+            <div class="abs-tag">ABSTRACT（原文，未删改）</div>
+            <div class="abs-text">{{ p.abstract or p.title }}</div>
+            {% if p.doi %}<div class="btns"><a class="btn doi" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI 原文</a>{% endif %}</div>
+          </div>
+        </details>
+        {% if p.doi %}<div class="ids">DOI：{{ p.doi }}</div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    {% if not preprints %}<div class="empty">本期无肠癌相关预印本</div>{% endif %}
+  </div>
+
+  <!-- 六、临床试验动态 -->
+  <h2 class="sec" id="sec-trials">临床试验动态</h2>
+  <div class="sec-sub">ClinicalTrials.gov · LastUpdatePostDate 窗口限定 · {{ stats.n_trials }} 项（ChiCTR 无公开 API，best-effort）</div>
+  <div class="trials-sec">
+    <table class="ttable">
+      <thead><tr><th>NCT 编号</th><th>题目</th><th>分期</th><th>干预</th><th>状态</th><th style="text-align:right">计划入组</th></tr></thead>
+      <tbody>
+        {% for t in trials %}
+        <tr>
+          <td class="nct"><a href="{{ t.url }}" target="_blank" rel="noopener">{{ t.regid }}</a>{% if t.get('created') and t.created >= window_start %}<br><span class="badge new">本期新注册</span>{% endif %}</td>
+          <td class="ttitle">{{ t.cn_title or t.title }}{% if 'liver metastas' in (t.title or '')|lower %} <span class="badge new">肝转移</span>{% endif %}{% if t.cn_title %}<span class="en">{{ t.title }}</span>{% endif %}</td>
+          <td class="phase">{{ t.phase }}</td>
+          <td class="interv">{{ t.interventions or "—" }}</td>
+          <td class="st {% if t.status in ['已完成','终止','暂停','已撤回'] %}closed{% endif %}">{{ t.status }}{% if t.date %}（{{ t.date }} 更新）{% endif %}</td>
+          <td class="enroll">{{ t.enrollment if t.enrollment is not none else "—" }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 七、指南与共识 -->
+  <h2 class="sec" id="sec-guidelines">指南与共识</h2>
+  <div class="sec-sub">PubMed 指南/共识检索（含中国专家共识英文版与国际指南）· 累计 {{ stats.n_guidelines }} 篇 · 中文原版指南（CACA/CSCO 等）多数未被 PubMed 收录，本节为 best-effort</div>
+  <div id="guidelineList">
+    {% for g in guidelines %}
+    <div class="card"
+         data-source="guideline" data-cat="{{ g.category }}" data-type="{{ g.get('study_type','其他') }}"
+         data-grade="" data-if="-1" data-score="{{ g.get('score', 0) }}"
+         data-text="{{ (g.title ~ ' ' ~ (g.cn_title or '') ~ ' ' ~ (g.insight or '') ~ ' ' ~ g.journal ~ ' ' ~ (g.abstract or '')) | lower | e }}">
+      <div class="ifcol"><div class="none">指南</div><div class="lbl">{{ g.date[:4] if g.date else '' }}</div></div>
+      <div class="body">
+        <div class="badges">
+          <span class="badge pre">指南/共识</span>
+          {% if g.get('china') %}<span class="badge" style="background:#fef2f2;color:#b91c1c">中国</span>{% endif %}
+          <span class="badge" style="background:var(--blue-light);color:var(--navy2)">{{ g.category }}</span>
+        </div>
+        {% if g.cn_title %}<div class="title-cn">{{ g.cn_title }}</div>{% endif %}
+        <div class="title-en"><a href="{{ g.url }}" target="_blank" rel="noopener">{{ g.title }}</a></div>
+        <div class="meta"><span class="jn">{{ g.journal }}</span>{% if g.date %} · {{ g.date }}{% endif %}{% if g.authors %} · {{ g.authors }}{% endif %}</div>
+        <div class="insight"><span class="ilab">要点与启示：</span>{{ g.insight or g.title }}</div>
+        <details class="exp">
+          <summary>展开英文原题摘要与原文链接</summary>
+          <div class="abs">
+            <div class="abs-tag">ABSTRACT（原文，未删改）</div>
+            <div class="abs-text">{{ g.abstract or g.title }}</div>
+            {% if g.doi %}<div class="btns"><a class="btn doi" href="https://doi.org/{{ g.doi }}" target="_blank" rel="noopener">DOI 原文</a>{% endif %}</div>
+          </div>
+        </details>
+        {% if g.doi %}<div class="ids">DOI：{{ g.doi }}</div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    {% if not guidelines %}<div class="empty">暂无收录的指南/共识</div>{% endif %}
+  </div>
+
+  <!-- 八、本周热点与趋势总结 -->
+  <h2 class="sec" id="sec-hotspots">本周热点与趋势总结</h2>
+  <div class="sec-sub">由本期文献提炼的课题组可执行信号</div>
+  <div class="hotspots">
+    {% if hotspots %}
+    <ol>{% for h in hotspots %}<li>{{ h }}</li>{% endfor %}</ol>
+    {% else %}<div class="empty">暂无</div>{% endif %}
+  </div>
+
+  <!-- 九、方法与检索式 -->
+  <h2 class="sec" id="sec-methods">方法与检索式</h2>
+  <div class="sec-sub">供课题组复核与复现 · 点击「复制」一键拷贝</div>
+  <div class="methods">
+    <h3>① PubMed（E-utilities · EDAT 窗口限定）</h3>
+    <div class="desc">检索窗口内新增收录（Entrez Date）的肠癌相关文献（肝转移为重点亚方向）；{{ funnel['pubmed_raw'] }} 条命中。</div>
+    <div class="qbox"><button class="copybtn" data-copy="{{ pubmed_query | e }}">复制</button>{{ pubmed_query }}</div>
+    <h3>② bioRxiv / medRxiv（API 按日期窗口拉取 + 关键词过滤）</h3>
+    <div class="desc">窗口内拉取 {{ funnel['preprint_raw'] }} 条，须命中肿瘤侧关键词（{{ preprint_onco | join(' / ') }}）之一，保留 {{ funnel['preprint_kept'] }} 篇（肝转移为重点亚方向）。</div>
+    <h3>③ ClinicalTrials.gov（API v2 · LastUpdatePostDate 窗口限定）</h3>
+    <div class="desc">条件词：{{ ctg_condition }}；{{ funnel['trials_raw'] }} 项命中。</div>
+    <div class="qbox"><button class="copybtn" data-copy="https://clinicaltrials.gov/api/v2/studies?query.cond={{ ctg_condition | urlencode }}&filter.advanced=AREA%5BLastUpdatePostDate%5DRANGE%5B{{ window_start }}%2C{{ window_end }}%5D">复制</button>https://clinicaltrials.gov/api/v2/studies?query.cond={{ ctg_condition }}&filter.advanced=AREA[LastUpdatePostDate]RANGE[{{ window_start }},{{ window_end }}]</div>
+    <h3>④ 指南与共识（PubMed · 指南/共识限定）</h3>
+    <div class="desc">肠癌主题 + Practice Guideline/Guideline 类型或 consensus/guideline 标题词；{{ funnel.get('guidelines_raw', 0) }} 条命中。中国机构产出自带「中国」标识；中文原版指南（CACA/CSCO 等）多数未被 PubMed 收录，为 best-effort 口径。</div>
+    <div class="qbox"><button class="copybtn" data-copy="{{ guideline_query | e }}">复制</button>{{ guideline_query }}</div>
+    <h3>⑤ ChiCTR（中国临床试验注册中心）</h3>
+    <div class="desc">无公开稳定 API，best-effort 抓取；失败时自动跳过并在运行日志告警，不影响其他数据源。</div>
+    <h3>等级定义</h3>
+    <div class="desc">
+      {% for g in ['S','A','B','C'] %}<b class="g{{ g }}">{{ g }}</b> = {{ grade_defs[g] }}；{% endfor %}预印本不参与分级。
+      五维评分：设计 0-30 · 验证 0-15 · 机制 0-15 · 影响力 0-20（IF 线性映射）· 契合度 0-20（肠癌领域重要性与契合度，肝转移直接相关高分），LLM 评分 + 规则回退。
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p><b>数据来源：</b>PubMed（期刊论文，EDAT 窗口）· bioRxiv / medRxiv（预印本）· ClinicalTrials.gov 与中国临床试验注册中心 ChiCTR（临床试验，best-effort）</p>
+  <p><b>说明：</b>中文标题、一句话启示、精读与热点述评由大模型自动生成，仅供参考，请以原文为准。影响因子为 JCR {{ if_year }} 版、分区为中科院 {{ cas_year }} 版（静态对照表，可能滞后）。</p>
+  <p>由 update.py 自动生成于 {{ generated }}</p>
+</footer>
+
+<script>
+(function(){
+  var state = {week:'all', src:'all', cat:'all', type:'all', grade:'all', sort:'date', q:''};
+  var $ = function(id){ return document.getElementById(id); };
+  var q = $('q'), weekSel = $('week'), srcSel = $('src'),
+      chips = document.querySelectorAll('.chip'),
+      sortSeg = $('sortSeg'), gradeSeg = $('gradeSeg'),
+      sections = document.querySelectorAll('section.week'),
+      preprintCards = document.querySelectorAll('#preprintList .card'),
+      empty = $('empty'), shown = $('shown'), total = $('total'),
+      collapseBtn = $('collapseBtn'), pagehead = $('pagehead'), filters = $('filters');
+
+  function setCollapsed(c){
+    pagehead.classList.toggle('collapsed', c);
+    filters.classList.toggle('collapsed', c);
+    collapseBtn.innerHTML = c ? '展开页头与筛选 ▼' : '收起页头与筛选 ▲';
+    try { localStorage.setItem('crlm_collapsed', c ? '1' : '0'); } catch(e){}
+  }
+  collapseBtn.addEventListener('click', function(){ setCollapsed(!pagehead.classList.contains('collapsed')); });
+  var saved = null;
+  try { saved = localStorage.getItem('crlm_collapsed'); } catch(e){}
+  if(saved === '1') setCollapsed(true);
+
+  function bindSeg(seg, key){
+    seg.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click', function(){
+        seg.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+        b.classList.add('active'); state[key] = b.dataset[key]; apply();
+      });
+    });
+  }
+  bindSeg(sortSeg, 'sort'); bindSeg(gradeSeg, 'grade');
+
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      var group = c.dataset.cat !== undefined ? 'cat' : 'type';
+      var attr = group === 'cat' ? 'data-cat' : 'data-type';
+      document.querySelectorAll('.chip[' + attr + ']').forEach(function(x){x.classList.remove('active')});
+      c.classList.add('active'); state[group] = c.dataset[group]; apply();
+    });
+  });
+  q.addEventListener('input', function(){ state.q = q.value.trim().toLowerCase(); apply(); });
+  weekSel.addEventListener('change', function(){ state.week = weekSel.value; apply(); });
+  srcSel.addEventListener('change', function(){ state.src = srcSel.value; apply(); });
+
+  document.querySelectorAll('.copybtn').forEach(function(b){
+    b.addEventListener('click', function(){
+      var txt = b.dataset.copy;
+      function done(){ b.textContent = '已复制'; setTimeout(function(){ b.textContent = '复制'; }, 1500); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done).catch(function(){ fallback(); });
+      } else { fallback(); }
+      function fallback(){
+        var ta = document.createElement('textarea'); ta.value = txt;
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch(e){}
+        document.body.removeChild(ta);
+      }
+    });
+  });
+
+  var originalOrder = [];
+  sections.forEach(function(sec){
+    originalOrder.push({sec: sec, cards: Array.prototype.slice.call(sec.querySelectorAll('.card'))});
+  });
+
+  function cardOk(card, isJournal){
+    return (state.src==='all' || card.dataset.source===state.src)
+        && (state.cat==='all' || card.dataset.cat===state.cat)
+        && (state.type==='all' || card.dataset.type===state.type)
+        && (isJournal ? (state.grade==='all' || card.dataset.grade===state.grade) : true)
+        && (!state.q || card.dataset.text.indexOf(state.q)!==-1);
+  }
+
+  function apply(){
+    var totalShown = 0;
+    // 已发表文献（按周分组）
+    sections.forEach(function(sec){
+      var cards = Array.prototype.slice.call(sec.querySelectorAll('.card'));
+      if(state.sort === 'date'){
+        var orig = originalOrder.find(function(o){ return o.sec === sec; });
+        orig.cards.forEach(function(c){ sec.appendChild(c); });
+      } else {
+        cards.sort(function(a, b){
+          return (parseFloat(b.dataset[state.sort]) || -1) - (parseFloat(a.dataset[state.sort]) || -1);
+        });
+        cards.forEach(function(c){ sec.appendChild(c); });
+      }
+      var visible = 0;
+      cards.forEach(function(card){
+        var ok = (state.week==='all' || sec.dataset.week===state.week) && cardOk(card, true);
+        card.style.display = ok ? '' : 'none';
+        if(ok){ visible++; totalShown++; }
+      });
+      sec.style.display = visible ? '' : 'none';
+      var cnt = sec.querySelector('.cnt');
+      if(cnt) cnt.textContent = visible ? visible + ' 条' : '';
+    });
+    // 预印本区
+    var preVisible = 0;
+    preprintCards.forEach(function(card){
+      var ok = cardOk(card, false);
+      card.style.display = ok ? '' : 'none';
+      if(ok){ preVisible++; totalShown++; }
+    });
+    var preSec = document.getElementById('preprintList');
+    var preEmpty = preSec.querySelector('.empty');
+    if(preEmpty) preEmpty.style.display = (preVisible || !preprintCards.length) ? 'none' : '';
+    empty.style.display = totalShown ? 'none' : '';
+    shown.textContent = totalShown;
+  }
+  total.textContent = document.querySelectorAll('.card').length;
+
+  // 导航高亮（滚动监听）
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.topnav a.nl'));
+  var secIds = navLinks.map(function(a){ return a.getAttribute('href').slice(1); });
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 130, current = secIds[0];
+    secIds.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= pos) current = id;
+    });
+    navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+  }, {passive: true});
+
+  apply();
+})();
+</script>
+</body>
+</html>
