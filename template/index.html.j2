@@ -241,7 +241,13 @@ footer p{margin-bottom:6px}
 <div class="filters" id="filters">
   <div class="wrap">
     <div class="frow">
-      <span class="flabel">等级</span>
+      <span class="flabel">主题</span>
+      <span class="seg" id="topicSeg">
+        <button data-topic="all" class="active">全部</button>
+        <button data-topic="肝转移">肝转移</button>
+        <button data-topic="肠癌总体">肠癌总体</button>
+      </span>
+      <span class="flabel" style="margin-left:14px">等级</span>
       <span class="seg" id="gradeSeg">
         <button data-grade="all" class="active">全部</button>
         {% for g in ['S','A','B','C'] %}<button data-grade="{{ g }}">{{ g }}</button>{% endfor %}
@@ -357,7 +363,7 @@ footer p{margin-bottom:6px}
       {% for p in items %}
       <div class="card"
            data-source="{{ p.source }}" data-cat="{{ p.category }}" data-type="{{ p.get('study_type','其他') }}"
-           data-grade="{{ p.get('grade','') }}" data-if="{{ p.if_value if p.if_value is not none else -1 }}"
+           data-grade="{{ p.get('grade','') }}" data-topic="{{ p.get('topic','') }}" data-if="{{ p.if_value if p.if_value is not none else -1 }}"
            data-score="{{ p.get('score', 0) }}"
            data-text="{{ (p.title ~ ' ' ~ (p.cn_title or '') ~ ' ' ~ (p.insight or '') ~ ' ' ~ p.journal ~ ' ' ~ (p.abstract or '')) | lower | e }}">
         <div class="ifcol">
@@ -421,7 +427,7 @@ footer p{margin-bottom:6px}
     {% for p in preprints %}
     <div class="card"
          data-source="preprint" data-cat="{{ p.category }}" data-type="{{ p.get('study_type','其他') }}"
-         data-grade="" data-if="-1" data-score="{{ p.get('score', 0) }}"
+         data-grade="" data-topic="{{ p.get('topic','') }}" data-if="-1" data-score="{{ p.get('score', 0) }}"
          data-text="{{ (p.title ~ ' ' ~ (p.cn_title or '') ~ ' ' ~ (p.insight or '') ~ ' ' ~ p.journal ~ ' ' ~ (p.abstract or '')) | lower | e }}">
       <div class="ifcol"><div class="none">预印</div><div class="lbl">{{ p.server }}</div></div>
       <div class="body">
@@ -478,7 +484,7 @@ footer p{margin-bottom:6px}
     {% for g in guidelines %}
     <div class="card"
          data-source="guideline" data-cat="{{ g.category }}" data-type="{{ g.get('study_type','其他') }}"
-         data-grade="" data-if="-1" data-score="{{ g.get('score', 0) }}"
+         data-grade="" data-topic="{{ g.get('topic','') }}" data-if="-1" data-score="{{ g.get('score', 0) }}"
          data-text="{{ (g.title ~ ' ' ~ (g.cn_title or '') ~ ' ' ~ (g.insight or '') ~ ' ' ~ g.journal ~ ' ' ~ (g.abstract or '')) | lower | e }}">
       <div class="ifcol"><div class="none">指南</div><div class="lbl">{{ g.date[:4] if g.date else '' }}</div></div>
       <div class="body">
@@ -548,7 +554,7 @@ footer p{margin-bottom:6px}
 
 <script>
 (function(){
-  var state = {week:'all', src:'all', cat:'all', type:'all', grade:'all', sort:'date', q:''};
+  var state = {week:'all', src:'all', cat:'all', type:'all', grade:'all', topic:'all', sort:'date', q:''};
   var $ = function(id){ return document.getElementById(id); };
   var q = $('q'), weekSel = $('week'), srcSel = $('src'),
       chips = document.querySelectorAll('.chip'),
@@ -577,7 +583,7 @@ footer p{margin-bottom:6px}
       });
     });
   }
-  bindSeg(sortSeg, 'sort'); bindSeg(gradeSeg, 'grade');
+  bindSeg(sortSeg, 'sort'); bindSeg(gradeSeg, 'grade'); bindSeg(topicSeg, 'topic');
 
   chips.forEach(function(c){
     c.addEventListener('click', function(){
@@ -617,6 +623,7 @@ footer p{margin-bottom:6px}
         && (state.cat==='all' || card.dataset.cat===state.cat)
         && (state.type==='all' || card.dataset.type===state.type)
         && (isJournal ? (state.grade==='all' || card.dataset.grade===state.grade) : true)
+        && (state.topic==='all' || card.dataset.topic===state.topic)
         && (!state.q || card.dataset.text.indexOf(state.q)!==-1);
   }
 
