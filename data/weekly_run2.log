@@ -1,0 +1,29 @@
+[10:19:21] PubMed: 检索中 ...
+[10:19:21] PubMed: 命中 386 篇
+[10:19:27] PubMed: 解析 386 篇
+[10:19:27] bioRxiv/medRxiv: 拉取中 ...
+[10:21:26] 预印本: 原始 2035 条, 肠癌相关 23 篇
+[10:21:26] Europe PMC: 查询 386 篇被引数 ...
+[10:21:43] Europe PMC: 命中被引数 0 篇
+[10:21:43] ClinicalTrials.gov: 检索中 ...
+[10:21:45] ClinicalTrials.gov: 105 项
+[10:21:45] ChiCTR: 尝试抓取（best-effort）...
+[10:21:46] ChiCTR 警告: 405 Client Error: Not Allowed for url: https://www.chictr.org.cn/searchproj.html?keyword=colorectal —— 本轮跳过 ChiCTR，不影响其他数据源
+[10:21:46] PubMed: 检索中 ...
+[10:21:46] PubMed: 命中 3 篇
+[10:21:48] PubMed: 解析 3 篇
+[10:21:48] 去重后新增: 文献 351 篇, 临床试验 83 项, 指南/共识 3 篇
+[10:21:48] LLM 模式（deepseek-chat）: 生成启示与评分 ...
+[10:33:09] LLM 成功 351/351 篇
+[10:33:09] 期刊指标匹配: 316/351
+[10:33:09] LLM 模式（deepseek-chat）: 生成启示与评分 ...
+[10:33:14] LLM 成功 3/3 篇
+[10:33:14] 期刊指标匹配: 3/3
+[10:33:14] LLM: Top10 精读 ...
+[10:33:38] LLM 精读成功 10/10
+[10:33:44] LLM 热点综述: 生成 6 条
+[10:33:47] LLM 试验题目翻译: 30/30
+[10:33:47] 数据库: 文献 1136 篇, 临床试验 331 项, 指南/共识 7 篇
+[10:33:48] 期号页: /workspace/crlm_weekly/site/issues/2026-10-13__2026-10-19/index.html
+[10:33:48] 首页: /workspace/crlm_weekly/site/index.html（5 期归档）
+[10:33:48] 文献库: /workspace/crlm_weekly/site/all/index.html

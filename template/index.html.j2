@@ -211,7 +211,7 @@ footer p{margin-bottom:6px}
 
 <nav class="topnav" id="topnav">
   <div class="wrap">
-    <span class="logo"><span class="ic">周</span><b>结直肠癌研究周报</b></span>
+    <a class="logo" href="{{ home_url or '#' }}" style="text-decoration:none"><span class="ic">周</span><b>结直肠癌研究周报</b></a>
     <a class="nl active" href="#sec-overview">本期概览</a>
     <a class="nl" href="#sec-panel">数据面板</a>
     <a class="nl" href="#sec-top10">精读 Top10</a>
@@ -221,6 +221,7 @@ footer p{margin-bottom:6px}
     <a class="nl" href="#sec-guidelines">指南与共识 <b>{{ stats.n_guidelines }}</b></a>
     <a class="nl" href="#sec-hotspots">热点与趋势</a>
     <a class="nl" href="#sec-methods">方法与检索式</a>
+    {% if home_url %}<a class="nl" href="{{ home_url }}">往期归档</a>{% endif %}
     <span class="dates">{{ window_start }} → {{ window_end }}</span>
   </div>
 </nav>

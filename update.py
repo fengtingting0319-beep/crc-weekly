@@ -820,26 +820,29 @@ def main():
     with open(os.path.join(DATA_DIR, "if_map.json"), encoding="utf-8") as f:
         if_map = json.load(f)
 
-    # 1) 抓取（记录漏斗计数）
+    # 1) 抓取（记录漏斗计数）；--days 0 为纯重渲染模式，跳过抓取
     funnel = {"pubmed_raw": 0, "preprint_raw": 0, "preprint_kept": 0,
               "trials_raw": 0, "dedup_removed": 0, "no_abstract": 0, "included": 0}
 
-    papers_new = fetch_pubmed(cfg["pubmed_query"], days, cfg["max_pubmed"])
-    funnel["pubmed_raw"] = len(papers_new)
-    preprints, preprint_raw = fetch_preprints(cfg, days)
-    funnel["preprint_raw"], funnel["preprint_kept"] = preprint_raw, len(preprints)
-    funnel["preprint_excluded"] = preprint_raw - len(preprints)
-    papers_new += preprints
-    fetch_citations(papers_new)
-    trials_new = fetch_clinicaltrials(cfg["ctg_condition"], days)
-    funnel["trials_raw"] = len(trials_new)
-    trials_new += fetch_chictr(cfg["chictr_keyword"])
+    if days > 0:
+        papers_new = fetch_pubmed(cfg["pubmed_query"], days, cfg["max_pubmed"])
+        funnel["pubmed_raw"] = len(papers_new)
+        preprints, preprint_raw = fetch_preprints(cfg, days)
+        funnel["preprint_raw"], funnel["preprint_kept"] = preprint_raw, len(preprints)
+        funnel["preprint_excluded"] = preprint_raw - len(preprints)
+        papers_new += preprints
+        fetch_citations(papers_new)
+        trials_new = fetch_clinicaltrials(cfg["ctg_condition"], days)
+        funnel["trials_raw"] = len(trials_new)
+        trials_new += fetch_chictr(cfg["chictr_keyword"])
 
-    # 指南与共识（独立数据源，独立入库）
-    guidelines_new = fetch_pubmed(cfg["guideline_query"], days, 50)
-    for g in guidelines_new:
-        g["source"] = "guideline"
-    funnel["guidelines_raw"] = len(guidelines_new)
+        # 指南与共识（独立数据源，独立入库）
+        guidelines_new = fetch_pubmed(cfg["guideline_query"], days, 50)
+        for g in guidelines_new:
+            g["source"] = "guideline"
+        funnel["guidelines_raw"] = len(guidelines_new)
+    else:
+        papers_new, preprints, trials_new, guidelines_new = [], [], [], []
 
     # 无有效摘要的文献不纳入（计入漏斗）
     with_abs = [p for p in papers_new if (p.get("abstract") or "").strip()]
@@ -932,17 +935,117 @@ def main():
     save_jsonl(os.path.join(DATA_DIR, "guidelines.jsonl"), guidelines_db)
     log(f"数据库: 文献 {len(papers_db)} 篇, 临床试验 {len(trials_db)} 项, 指南/共识 {len(guidelines_db)} 篇")
 
-    # 5) 渲染
-    render(papers_db, trials_db, if_map, cfg, funnel, hotspots, guidelines_db)
-    log(f"完成: {os.path.join(SITE_DIR, 'index.html')}")
+    # 5) 渲染：本期期号页 + 首页归档 + 全部文献库
+    ws, we = funnel.get("window_start", ""), funnel.get("window_end", "")
+    issue_id = f"{ws}__{we}"
+    if papers_new:
+        issue_papers, issue_trials, issue_guidelines = papers_new, trials_new, guidelines_new
+    else:
+        # 空运行重渲染：按窗口（月精度）从库中取
+        issue_papers = [p for p in papers_db.values() if ws[:7] <= (p.get("date") or "")[:7] <= we[:7]]
+        issue_trials = [t for t in trials_db.values() if ws[:7] <= (t.get("date") or "")[:7] <= we[:7]]
+        issue_guidelines = [g for g in guidelines_db.values() if ws[:7] <= (g.get("date") or "")[:7] <= we[:7]]
+    issue_dir = os.path.join(SITE_DIR, "issues", issue_id)
+    render_issue(issue_papers, issue_trials, issue_guidelines, if_map, cfg, funnel, hotspots,
+                 issue_dir, home_url="../../index.html",
+                 scope_note="本期为独立期号存档，按发表月份精度归档，可能含相邻窗口文献")
+    log(f"期号页: {issue_dir}/index.html")
+
+    # 期号注册表 + 首页（仅真实运行注册新期号；--days 0 重渲染不注册）
+    if days > 0:
+        issues_path = os.path.join(DATA_DIR, "issues.json")
+        issues = []
+        if os.path.exists(issues_path):
+            with open(issues_path, encoding="utf-8") as f:
+                issues = json.load(f)
+        entry = {
+            "id": issue_id, "window_start": ws, "window_end": we,
+            "n_papers": funnel.get("included", len([p for p in issue_papers if p.get("source") != "preprint"])),
+            "n_preprints": funnel.get("preprint_kept", len([p for p in issue_papers if p.get("source") == "preprint"])),
+            "n_trials": funnel.get("trials_raw", len(issue_trials)),
+            "generated": dt.datetime.now().strftime("%Y-%m-%d %H:%M"),
+        }
+        issues = [i for i in issues if i["id"] != issue_id]
+        issues.append(entry)
+        issues.sort(key=lambda i: i["window_end"], reverse=True)
+        with open(issues_path, "w", encoding="utf-8") as f:
+            json.dump(issues, f, ensure_ascii=False, indent=1)
+    else:
+        issues_path = os.path.join(DATA_DIR, "issues.json")
+        issues = []
+        if os.path.exists(issues_path):
+            with open(issues_path, encoding="utf-8") as f:
+                issues = json.load(f)
+    render_home(issues, cfg)
+    log(f"首页: {os.path.join(SITE_DIR, 'index.html')}（{len(issues)} 期归档）")
+
+    # 全部文献库（全量视图）
+    render_issue(list(papers_db.values()), list(trials_db.values()), list(guidelines_db.values()),
+                 if_map, cfg, funnel, hotspots, os.path.join(SITE_DIR, "all"),
+                 home_url="../index.html", scope_note="全量文献库（累计所有期号）")
+    log(f"文献库: {os.path.join(SITE_DIR, 'all', 'index.html')}")
 
 
-def render(papers_db, trials_db, if_map, cfg, funnel, hotspots, guidelines_db):
+def issue_markdown(ctx_papers, ctx_trials, ctx_guidelines, funnel, hotspots):
+    """期号 Markdown 版（供笔记/群发）"""
+    ws, we = funnel.get("window_start", ""), funnel.get("window_end", "")
+    lines = [f"# 结直肠癌研究周报（{ws} 至 {we}）", ""]
+    if hotspots:
+        lines += ["## 本周热点与趋势", ""]
+        lines += [f"{i}. {h}" for i, h in enumerate(hotspots, 1)] + [""]
+    jp = [p for p in ctx_papers if p.get("source") == "journal"]
+    top10 = sorted(jp, key=lambda p: p.get("score", 0), reverse=True)[:10]
+    if top10:
+        lines += ["## 本期 Top10 精读", ""]
+        for p in top10:
+            lines.append(f"### {p.get('cn_title') or p['title']}（{p.get('grade','')} 级 · {p.get('score',0)} 分）")
+            lines.append(f"- {p.get('journal','')} · {p.get('date','')} · IF {p.get('if_value') or '—'} · [原文]({p.get('url','')})")
+            if p.get("insight"):
+                lines.append(f"- 意义与启示：{p['insight']}")
+            lines.append("")
+    for topic in ("肝转移", "肠癌总体"):
+        tp = [p for p in ctx_papers if p.get("topic") == topic]
+        if not tp:
+            continue
+        lines += [f"## {topic}（{len(tp)} 篇）", ""]
+        for p in sorted(tp, key=lambda x: x.get("score", 0), reverse=True):
+            cn = p.get("cn_title") or p["title"]
+            lines.append(f"- **{cn}** ｜ {p.get('journal','')} · {p.get('date','')} · {p.get('grade','')} 级 · {p.get('score',0)} 分 · [原文]({p.get('url','')})")
+            if p.get("insight"):
+                lines.append(f"  - {p['insight']}")
+        lines.append("")
+    if ctx_trials:
+        lines += [f"## 临床试验动态（{len(ctx_trials)} 项）", ""]
+        lines += [f"- {t.get('regid','')} ｜ {t.get('cn_title') or t.get('title','')} ｜ {t.get('phase','')} ｜ {t.get('status','')}" for t in ctx_trials]
+        lines.append("")
+    if ctx_guidelines:
+        lines += [f"## 指南与共识（{len(ctx_guidelines)} 篇）", ""]
+        for g in ctx_guidelines:
+            lines.append(f"- **{g.get('cn_title') or g['title']}** ｜ {g.get('journal','')} · {g.get('date','')} · [原文]({g.get('url','')})")
+            if g.get("insight"):
+                lines.append(f"  - {g['insight']}")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def render_home(issues, cfg):
+    """首页：最新一期大卡片 + 往期归档表"""
+    from jinja2 import Environment, FileSystemLoader
+    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
+    tpl = env.get_template("home.html.j2")
+    html = tpl.render(issues=issues, latest=issues[0] if issues else None,
+                      generated=dt.datetime.now().strftime("%Y-%m-%d %H:%M"))
+    with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
+        f.write(html)
+
+
+def render_issue(papers_list, trials_list, guidelines_list, if_map, cfg, funnel, hotspots,
+                 out_dir, home_url="", scope_note=""):
     from jinja2 import Environment, FileSystemLoader
 
-    papers = sorted(papers_db.values(), key=lambda p: p.get("date") or "", reverse=True)
-    trials = sorted(trials_db.values(), key=lambda t: t.get("date") or "", reverse=True)
-    guidelines = sorted(guidelines_db.values(), key=lambda g: g.get("date") or "", reverse=True)
+    papers = sorted(papers_list, key=lambda p: p.get("date") or "", reverse=True)
+    trials = sorted(trials_list, key=lambda t: t.get("date") or "", reverse=True)
+    guidelines = sorted(guidelines_list, key=lambda g: g.get("date") or "", reverse=True)
     journal_papers = [p for p in papers if p.get("source") == "journal"]
     preprints = [p for p in papers if p.get("source") == "preprint"]
 
@@ -1027,10 +1130,15 @@ def render(papers_db, trials_db, if_map, cfg, funnel, hotspots, guidelines_db):
         preprint_mets=cfg["preprint_mets_keywords"],
         window_start=funnel.get("window_start", (dt.date.today() - dt.timedelta(days=6)).isoformat()),
         window_end=funnel.get("window_end", dt.date.today().isoformat()),
+        home_url=home_url,
+        scope_note=scope_note,
     )
-    os.makedirs(SITE_DIR, exist_ok=True)
-    with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
+    # Markdown 版
+    with open(os.path.join(out_dir, "report.md"), "w", encoding="utf-8") as f:
+        f.write(issue_markdown(papers, trials, guidelines, funnel, hotspots))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,741 @@
+# 结直肠癌研究周报（2026-10-03 至 2026-10-09）
+
+## 本周热点与趋势
+
+1. 围手术期抗菌药物管理：一项基于2691例结直肠切除患者、采用倾向性评分匹配的回顾性研究显示，术后48小时之后继续预防性使用抗菌药物，并未降低手术部位感染（SSI）及其他医疗保健相关感染（HAI）的发生率，提示延长预防性用药缺乏获益证据，应作为抗菌药物管理（AMS）的常规整改靶点（BMC Infectious Diseases）。该结论对结直肠癌围手术期路径的规范化具有直接指导意义，尤其适用于加速康复外科（ERAS）背景下的用药精简。
+2. 患者端AI工具在肠癌全程管理中的潜在价值：一篇叙述性综述系统评估了面向患者的AI聊天机器人与大语言模型工具在肠癌诊疗中的应用潜力、局限与实施条件，重点关注中低收入国家的可及性场景（Cureus）。现有证据主要来自小样本前瞻性与可行性研究，尚缺乏对症状识别准确性、分诊安全性与健康结局改善的硬终点验证，提示该方向仍处于早期探索阶段，需在真实世界研究中明确其边界与风险控制。
+3. （说明：本次提供的文献清单仅含2条记录，且均非肝转移或结直肠癌治疗策略、生物标志物、机制发现、手术与局部治疗等核心亚方向的高证据级别研究，无法在不虚构数据的前提下凑足3~6条主题。建议补充本周肝转移相关文献（如转化治疗、局部消融、肝切除时机、分子残留病灶等）后重新生成完整周报。）
+
+## 本期 Top10 精读
+
+### CCI-seq解析复杂组织中细胞间互作网络及其分子逻辑（S 级 · 82 分）
+- Nature Methods · 2026-10 · IF 32.1 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834226/)
+- 意义与启示：CCI-seq实现高通量、无偏倚的细胞互作捕获，在肠癌中揭示亚型特异性互作及NF-κB炎症激活，为肝转移微环境研究提供新工具。
+
+### 中性粒细胞衰老：结直肠癌肝转移免疫抑制新机制（S 级 · 78 分）
+- Cancer Discovery · 2026-10 · IF 33.3 · [原文](https://pubmed.ncbi.nlm.nih.gov/42817716/)
+- 意义与启示：该研究揭示结直肠癌肝转移微环境中葡萄糖匮乏诱导BHLHE40上调，驱动中性粒细胞衰老并促进血管生成、排斥CD8+ T细胞，为靶向衰老中性粒细胞改善免疫治疗提供新思路。
+
+### 组蛋白H4K5乳酰化反馈环路调控肿瘤相关Treg的甘油免疫抑制活性（S 级 · 76 分）
+- Signal Transduction and Targeted Therapy · 2026-10 · IF 52.7 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844247/)
+- 意义与启示：揭示H4K5乳酰化反馈环路驱动Treg甘油代谢免疫抑制，为肠癌肝转移营养微环境差异提供新靶点。
+
+### 肠上皮GSK3β调控富马酸依赖的中性粒细胞重编程促进结直肠癌（S 级 · 76 分）
+- Nature Cancer · 2026-10 · IF 28.5 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839060/)
+- 意义与启示：揭示肠上皮GSK3β-富马酸-KDM2B轴驱动中性粒细胞免疫抑制重编程，为结直肠癌（含肝转移）免疫联合治疗提供代谢-表观新靶点。
+
+### 金属有机框架纳米疫苗诱导系统性肿瘤消退（S 级 · 76 分）
+- Nature Biomedical Engineering · 2026-10 · IF 26.6 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839014/)
+- 意义与启示：MOF纳米疫苗共递送抗原与STING激动剂，经巨噬细胞抗原呈递重塑微环境，为肠癌及肝转移免疫治疗提供模块化平台。
+
+### 工程化表达IFN-γ的血小板样微粒靶向巨噬细胞清除结直肠癌肝转移（S 级 · 76 分）
+- Advanced Materials (deerfield Beach, Fla.) · 2026-10 · IF 26.8 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829798/)
+- 意义与启示：该研究通过肝巨噬细胞靶向的IFN-γ血小板样微粒，局部重塑免疫微环境，有效清除肝转移且避免全身毒性，为肠癌肝转移免疫治疗提供新策略。
+
+### SPP1+巨噬细胞与结直肠癌肝转移新辅助化疗耐药的相关性研究（B 级 · 74 分）
+- Molecular Biomedicine · 2026-10 · IF 10.1 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830367/)
+- 意义与启示：该研究揭示SPP1+巨噬细胞通过SPP1-CD44轴抑制CD8+T细胞并形成空间免疫屏障，驱动CRLM新辅助化疗耐药，为联合免疫治疗提供新靶点。
+
+### 前瞻性ctDNA检测指导结直肠癌微小残留病灶的临床影响：INTERCEPT项目经验（S 级 · 70 分）
+- Gut · 2026-10 · IF 25.8 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823331/)
+- 意义与启示：证实ctDNA-MRD在II-IV期肠癌的预后价值并揭示多时间点检测可提高复发敏感性，为肝转移术后MRD分层和干预时间窗提供依据。
+
+### 核内PHB1缺失驱动酒精性肝损伤并促进结直肠癌肝转移（B 级 · 69 分）
+- The Journal of Clinical Investigation · 2026-10 · IF 13.6 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837177/)
+- 意义与启示：揭示核内PHB1经CRM1出核缺失是ALD及ALD-CRLM的关键驱动机制，PHB1 NES肽可同时改善肝损伤并抑制肝转移，为酒精相关肠癌肝转移提供新靶点。
+
+### 干预策略提升异常FIT/FOBT后结肠镜随访完成率的系统综述与Meta分析（S 级 · 69 分）
+- JAMA Internal Medicine · 2026-10 · IF 23.3 · [原文](https://pubmed.ncbi.nlm.nih.gov/42832233/)
+- 意义与启示：患者导航、患者及医生提醒等干预可显著提高异常FIT/FOBT后结肠镜随访完成率，为肠癌筛查闭环管理提供循证依据，对肝转移早期防控具潜在价值。
+
+## 肝转移（22 篇）
+
+- **中性粒细胞衰老：结直肠癌肝转移免疫抑制新机制** ｜ Cancer Discovery · 2026-10 · S 级 · 78 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42817716/)
+  - 该研究揭示结直肠癌肝转移微环境中葡萄糖匮乏诱导BHLHE40上调，驱动中性粒细胞衰老并促进血管生成、排斥CD8+ T细胞，为靶向衰老中性粒细胞改善免疫治疗提供新思路。
+- **组蛋白H4K5乳酰化反馈环路调控肿瘤相关Treg的甘油免疫抑制活性** ｜ Signal Transduction and Targeted Therapy · 2026-10 · S 级 · 76 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844247/)
+  - 揭示H4K5乳酰化反馈环路驱动Treg甘油代谢免疫抑制，为肠癌肝转移营养微环境差异提供新靶点。
+- **工程化表达IFN-γ的血小板样微粒靶向巨噬细胞清除结直肠癌肝转移** ｜ Advanced Materials (deerfield Beach, Fla.) · 2026-10 · S 级 · 76 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829798/)
+  - 该研究通过肝巨噬细胞靶向的IFN-γ血小板样微粒，局部重塑免疫微环境，有效清除肝转移且避免全身毒性，为肠癌肝转移免疫治疗提供新策略。
+- **SPP1+巨噬细胞与结直肠癌肝转移新辅助化疗耐药的相关性研究** ｜ Molecular Biomedicine · 2026-10 · B 级 · 74 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830367/)
+  - 该研究揭示SPP1+巨噬细胞通过SPP1-CD44轴抑制CD8+T细胞并形成空间免疫屏障，驱动CRLM新辅助化疗耐药，为联合免疫治疗提供新靶点。
+- **核内PHB1缺失驱动酒精性肝损伤并促进结直肠癌肝转移** ｜ The Journal of Clinical Investigation · 2026-10 · B 级 · 69 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837177/)
+  - 揭示核内PHB1经CRM1出核缺失是ALD及ALD-CRLM的关键驱动机制，PHB1 NES肽可同时改善肝损伤并抑制肝转移，为酒精相关肠癌肝转移提供新靶点。
+- **结直肠癌肝转移切除术后对化疗反应良好者重新引入术后化疗：法国随机III期IRIMAD试验** ｜ Digestive and Liver Disease : Official Journal of the Italian Society of Gastroenterology and the Italian Association for the Study of the Liver · 2026-10 · S 级 · 56 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42850173/)
+  - 首次在化疗反应良好的异时性CRLM人群中验证术后FOLFIRI再引入的价值，有望确立基于化疗反应的个体化术后治疗策略。
+- **结直肠癌肝转移：从发病机制到当前治疗** ｜ Medcomm · 2026-10 · B 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830873/)
+  - 系统整合CRLM多阶段进展机制与临床治疗策略，强调免疫耐受与肝转移微环境重塑，为免疫治疗及生物标志物指导的精准治疗提供概念框架。
+- **纳武利尤单抗联合伊匹木单抗及放疗治疗转移性MSS结直肠癌的II期研究** ｜ Clinical Cancer Research : an Official Journal of the American Association for Cancer Research · 2026-10 · A 级 · 51 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42820689/)
+  - 非消融剂量放疗联合双免疫检查点抑制剂在难治性MSS结直肠癌中显示选择性疗效，且应答集中于无活动性肝转移患者，提示肝转移是免疫治疗耐药的关键因素，需探索肝转移灶的免疫微环境干预策略。
+- **肝动脉灌注泵技术并发症与挽救：2935例连续病例的单中心经验** ｜ Annals of Surgery · 2026-10 · B 级 · 51 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42894309/)
+  - 大样本证实HAIP相关并发症约1/4但多数可挽救，为肝转移综合治疗中HAIP的安全管理提供了关键循证依据。
+- **结直肠癌肝转移炎症微环境进展特征：转录组发现、TCGA预后与空间定位** ｜ Omics : a Journal of Integrative Biology · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844848/)
+  - 整合批量与空间转录组构建39基因炎症微环境评分，可预测结直肠癌肝转移患者不良预后，为CRLM微环境分层提供候选工具。
+- **MASLD与结直肠癌转移及肝转移风险的全国性关联分析** ｜ World Journal of Oncology · 2026-10 · B 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42730415/)
+  - 基于NIS大样本证实MASLD独立增加CRLM及院内死亡风险，提示CRLM患者应常规评估并干预代谢性脂肪肝。
+- **CEA-CEAR受体占据计算模型助力抗CEA治疗结直肠癌肝转移** ｜ Anticancer Research · 2026-10 · C 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823153/)
+  - 该研究通过随机配体-受体占据模型模拟CEA-CEAR相互作用，为抗CEA单抗的受体占据阈值和亲和力优化提供计算框架，提示靶向CEA-CEAR轴可能成为抑制肝转移的新策略。
+- **老年结直肠癌肝转移患者接受肝脏定向治疗的治疗模式与生存结局** ｜ Annals of Surgical Oncology · 2026-10 · S 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844526/)
+  - 老年CRLM患者接受肝脏定向治疗的比例显著低于年轻患者，但经选择的老年患者接受LDT后生存与年轻患者相当，提示不应仅凭年龄剥夺其治疗机会。
+- **基于模式的p53免疫组化预测新辅助化疗后未达pCR的结直肠癌肝转移复发** ｜ Cancer Reports (hoboken, N.J.) · 2026-10 · A 级 · 41 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42827381/)
+  - 在FOLFOXIRI新辅助后未达pCR的CRLM中，p53异常表达是独立不良预后因素，提示可据此对高危患者进行术后风险分层与个体化治疗。
+- **结直肠癌肝转移切除术后条件无复发生存：肝转移数目的时间依赖性预后意义** ｜ Journal of Surgical Oncology · 2026-10 · B 级 · 40 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42894442/)
+  - 揭示肝转移数目在术后早期（6-12个月）仍具预后价值，提示应按时间分层随访与辅助治疗决策，为肝转移术后动态风险分层提供依据。
+- **年龄非禁区：老年结直肠癌肝转移患者术后结局分析** ｜ Journal of Surgical Oncology · 2026-10 · B 级 · 39 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844805/)
+  - 经严格筛选的老年及高龄结直肠癌肝转移患者行肝转移灶切除术后并发症与生存结局与年轻患者相当，提示年龄本身不应成为手术排除标准。
+- **机器人对比腹腔镜与开腹再次肝切除的安全性与疗效：回顾性比较研究** ｜ Updates in Surgery · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853542/)
+  - 机器人再次肝切除安全可行，可拓展微创肝切除至肝硬化等复杂病例，为肠癌肝转移复发再切除提供微创选择。
+- **肝切除术后DIC对结直肠癌肝转移切除预后的影响** ｜ Anticancer Research · 2026-10 · B 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823165/)
+  - 肝切除术后DIC是结直肠癌肝转移患者总生存的独立不良预后因素，提示术后凝血功能监测与干预可能改善预后。
+- **非结直肠非神经内分泌胃肠癌异时性肝转移的手术切除：系统综述与Meta分析** ｜ Anticancer Research · 2026-10 · B 级 · 33 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823176/)
+  - 该研究提示NCRNNE胃肠癌异时性肝转移手术切除或可改善生存，但证据异质性大、远期获益不显著；对肠癌肝转移研究而言，反衬出结直肠癌肝转移高证据等级与规范化的必要性。
+- **海湾地区首例不可切除结直肠癌肝转移肝移植** ｜ Transplantation Proceedings · 2026-10 · C 级 · 28 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42850076/)
+  - 报道海湾地区首例不可切除CRLM肝移植成功案例，验证了Cleveland方案在资源有限地区的可行性，为移植肿瘤学区域推广提供依据。
+- **重复热消融治疗高龄多部位转移性结肠癌一例** ｜ Anticancer Research · 2026-10 · C 级 · 21 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823149/)
+  - 高龄合并症多、无法耐受化疗及手术的转移性肠癌患者，重复热消融可实现长期无病生存，提示局部消融在特定人群中的潜在价值。
+- **晚期结肠癌系统治疗稳定期新发肺结节误判为转移：肺隐球菌病一例并文献复习** ｜ Medicine · 2026-10 · C 级 · 20 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826288/)
+  - 提示肠癌系统治疗稳定时新发肺结节需警惕机会性感染而非转移，避免误判进展而错误升级抗肿瘤治疗。
+
+## 肠癌总体（241 篇）
+
+- **CCI-seq解析复杂组织中细胞间互作网络及其分子逻辑** ｜ Nature Methods · 2026-10 · S 级 · 82 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834226/)
+  - CCI-seq实现高通量、无偏倚的细胞互作捕获，在肠癌中揭示亚型特异性互作及NF-κB炎症激活，为肝转移微环境研究提供新工具。
+- **肠上皮GSK3β调控富马酸依赖的中性粒细胞重编程促进结直肠癌** ｜ Nature Cancer · 2026-10 · S 级 · 76 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839060/)
+  - 揭示肠上皮GSK3β-富马酸-KDM2B轴驱动中性粒细胞免疫抑制重编程，为结直肠癌（含肝转移）免疫联合治疗提供代谢-表观新靶点。
+- **金属有机框架纳米疫苗诱导系统性肿瘤消退** ｜ Nature Biomedical Engineering · 2026-10 · S 级 · 76 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839014/)
+  - MOF纳米疫苗共递送抗原与STING激动剂，经巨噬细胞抗原呈递重塑微环境，为肠癌及肝转移免疫治疗提供模块化平台。
+- **结直肠癌风险的血浆蛋白质组标志物：EPIC前瞻性队列研究** ｜ medRxiv (预印本) · 2026-10-07 ·  级 · 70 分 · [原文](https://doi.org/10.64898/2026.10.05.26364761)
+  - 结肠癌与直肠癌诊断前蛋白质组谱显著不同，提示需按部位分别研究；COMP、MIC-1/GDF15、TFF3为最稳健的结肠癌风险标志物，为肠癌早期筛查与机制研究提供新靶点。
+- **前瞻性ctDNA检测指导结直肠癌微小残留病灶的临床影响：INTERCEPT项目经验** ｜ Gut · 2026-10 · S 级 · 70 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823331/)
+  - 证实ctDNA-MRD在II-IV期肠癌的预后价值并揭示多时间点检测可提高复发敏感性，为肝转移术后MRD分层和干预时间窗提供依据。
+- **DNA损伤修复通路遗传解析揭示结直肠癌PD-1阻断应答的差异性调控** ｜ bioRxiv (预印本) · 2026-10-06 ·  级 · 69 分 · [原文](https://doi.org/10.64898/2026.10.03.756428)
+  - 系统筛选揭示DDR基因对PD-1阻断的调控具有通路特异性，BRCA1/2缺失增敏而ATR/MSH6缺失抵抗，ATM抑制可增敏MSS肠癌免疫治疗，为MSS肠癌免疫联合策略提供新靶点。
+- **一碳代谢通过染色质重塑调控结直肠癌细胞状态与化疗敏感性** ｜ bioRxiv (预印本) · 2026-10-02 ·  级 · 69 分 · [原文](https://doi.org/10.64898/2026.09.30.755690)
+  - 叶酸并非单纯增效TS抑制的辅因子，而是通过EZH2/H3K27me3重塑上皮状态、分层氟尿嘧啶疗效的代谢调控者，提示按细胞状态而非单纯增殖指导化疗联合叶酸。
+- **干预策略提升异常FIT/FOBT后结肠镜随访完成率的系统综述与Meta分析** ｜ JAMA Internal Medicine · 2026-10 · S 级 · 69 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42832233/)
+  - 患者导航、患者及医生提醒等干预可显著提高异常FIT/FOBT后结肠镜随访完成率，为肠癌筛查闭环管理提供循证依据，对肝转移早期防控具潜在价值。
+- **免疫球蛋白A通过DMBT1抑制结肠上皮增殖与肿瘤发生** ｜ bioRxiv (预印本) · 2026-10-08 ·  级 · 68 分 · [原文](https://doi.org/10.1101/2023.10.06.561290)
+  - 该研究揭示IgA通过结合DMBT1直接抑制结肠上皮增殖，为肠道菌群-免疫-上皮稳态失衡驱动肠癌提供了新机制，提示IgA可作为肠癌预防干预靶点。
+- **SLC39驱动锌内流通过CDX2-CD24轴塑造结直肠癌免疫抑制微环境** ｜ Science Advances · 2026-10 · B 级 · 68 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842645/)
+  - 揭示锌转运体SLC39通过CDX2-CD24轴介导免疫荒漠型肠癌免疫抑制，为锌代谢靶向联合免疫治疗提供新思路。
+- **PLA1A抑制通过阻断免疫抑制性巨噬细胞极化增强结直肠癌化疗免疫治疗疗效** ｜ Cancer Research · 2026-10 · S 级 · 68 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42832699/)
+  - 揭示化疗诱导的PLA1A-LysoPS-P2ry10代谢轴驱动M2巨噬细胞极化导致免疫抑制，靶向PLA1A可增敏化疗免疫治疗，为肠癌联合治疗提供新靶点。
+- **结直肠癌单细胞表观基因组学：从iCMS表观状态到转移与治疗耐药** ｜ Experimental & Molecular Medicine · 2026-10 · B 级 · 67 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42827107/)
+  - 该综述提出CRC可归为iCMS2/iCMS3两种表观基因组状态，并系统阐述从腺瘤到转移的表观重编程及微环境重塑，为肝转移机制与表观-免疫联合治疗提供新框架。
+- **基于H&E的非转移性淋巴结组织病理亚型可重复分类并优化结直肠癌风险分层** ｜ Modern Pathology : an Official Journal of the United States and Canadian Academy of Pathology, Inc · 2026-10 · B 级 · 67 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42855076/)
+  - 该研究建立了可重复的非转移性淋巴结H&E组织病理分型（刺激型/未刺激型/耗竭型），并构建可解释机器学习模型，在常规分期之外提供额外预后信息，提示淋巴结免疫-间质异质性应纳入肠癌（含肝转移）风险分层与治疗决策。
+- **空间与单细胞转录组揭示结直肠癌IFI6⁺ Treg与SPP1⁺巨噬细胞免疫抑制生态位** ｜ British Journal of Cancer · 2026-10 · B 级 · 66 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838996/)
+  - 该研究通过空间与单细胞转录组解析了结直肠癌免疫抑制微环境，发现IFI6⁺ Treg和SPP1⁺巨噬细胞等新亚群，为肠癌免疫治疗及肝转移微环境研究提供了潜在靶点。
+- **基于拓扑异构酶载荷的CDH17抗体偶联药物克服P-gp耐药但存在靶点介导清除** ｜ Clinical Cancer Research : an Official Journal of the American Association for Cancer Research · 2026-10 · B 级 · 66 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42832380/)
+  - 该研究提示拓扑异构酶I抑制剂载荷（如exatecan）可克服P-gp介导的CDH17-ADC耐药，但CDH17正常组织表达导致靶点介导清除和潜在on-target off-tumor毒性，为肠癌ADC设计提供关键转化依据。
+- **VINTER：用于空间组织注释与解析的生成式视觉-语言模型** ｜ bioRxiv (预印本) · 2026-10-08 ·  级 · 65 分 · [原文](https://doi.org/10.64898/2026.10.01.752251)
+  - VINTER将组织学、基因表达与空间邻域统一为可编辑序列，实现跨平台空间注释与机制解析；其无需重训即可解析结直肠癌TLS滤泡结构，为肠癌肝转移微环境研究提供可 interrogation 的新工具。
+- **仙连解毒汤调控pMMR结直肠肿瘤向dMMR样表型转化增强抗PD-1疗效** ｜ Phytomedicine : International Journal of Phytotherapy and Phytopharmacology · 2026-10 · B 级 · 65 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42854555/)
+  - 揭示IFNGR1下调与膜定位缺失是pMMR肠癌免疫逃逸关键机制，中药仙连解毒汤及其活性成分白果内酯A可恢复IFNGR1增强抗PD-1疗效，为占95%的pMMR肠癌免疫治疗增敏提供新策略。
+- **丙酸通过促进CD8+ T细胞浸润增强结直肠癌免疫治疗疗效** ｜ Journal for Immunotherapy of Cancer · 2026-10 · B 级 · 64 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823087/)
+  - 揭示肠道菌群代谢物丙酸可重塑结直肠癌免疫微环境、克服免疫排斥并增强抗PD-L1疗效，为肠癌（含肝转移）免疫联合治疗提供代谢干预新靶点。
+- **人工智能评估直肠癌MRI壁外血管侵犯的多中心研究** ｜ PLOS Digital Health · 2026-10 · S 级 · 63 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42821531/)
+  - 基于nnUNet的AI模型可自动分割并判定mrEMVI，与资深放射科医师高度一致且具独立预后价值，为直肠癌风险分层与个体化治疗提供可扩展的客观工具。
+- **精准先行：新辅助肿瘤不可知疗法的范式转变** ｜ Trends in Cancer · 2026-10 · S 级 · 63 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844118/)
+  - 肿瘤不可知疗法前移至新辅助阶段，dMMR直肠癌PD-1单药达100%完全缓解并保全器官，为肠癌尤其肝转移的精准降期与器官保留提供新范式。
+- **KRAS突变肿瘤：从不可成药困境到精准医学** ｜ Medcomm · 2026-10 · B 级 · 63 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42840361/)
+  - 系统梳理KRAS突变肿瘤的分子流行病学与治疗格局，强调等位基因身份、肿瘤谱系与适应性信号共同决定治疗脆弱性，为肠癌KRAS靶向及耐药后联合策略提供路线图。
+- **间歇性禁食通过降低牛磺酸可用性及PERK衰减相关类副凋亡促进结直肠癌抗肿瘤免疫** ｜ Advanced Science (weinheim, Baden-wurttemberg, Germany) · 2026-10 · B 级 · 63 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839693/)
+  - 揭示间歇性禁食经牛磺酸-PERK-类副凋亡轴增强抗肿瘤免疫的新机制，为肠癌代谢干预联合免疫治疗提供潜在靶点。
+- **SND1通过抑制FBW7介导的泛素化稳定HK2促进结直肠癌进展与转移** ｜ International Immunopharmacology · 2026-10 · B 级 · 63 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837794/)
+  - 该研究揭示SND1/FBW7/HK2轴驱动结直肠癌糖酵解重编程与转移，为肠癌（含转移性肝转移）代谢靶向治疗提供新候选靶点。
+- **结直肠癌流行病学、危险因素、信号通路、临床特征、筛查、诊断与治疗综述** ｜ Medcomm · 2026-10 · B 级 · 63 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42828116/)
+  - 系统整合CRC从人群风险到肿瘤生态与精准治疗的框架，强调ctDNA、AI内镜与分子分型落地，为肝转移全程管理与生物标志物驱动决策提供路线图。
+- **工程化益生菌靶向去唾液酸化重塑肿瘤微环境增强免疫治疗** ｜ bioRxiv (预印本) · 2026-10-06 ·  级 · 62 分 · [原文](https://doi.org/10.64898/2026.10.04.756258)
+  - 通过工程化益生菌实现肿瘤靶向去唾液酸化，逆转免疫抑制微环境，为结直肠癌免疫治疗及肝转移提供可转化新策略。
+- **TFAM缺失通过mtDNA-STING-TBK1轴驱动结直肠癌奥沙利铂耐药** ｜ Oncogene · 2026-10 · B 级 · 62 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42827098/)
+  - 揭示TFAM缺失-mtDNA胞质泄漏-STING-TBK1-溶酶体自噬新轴驱动奥沙利铂耐药，提示TBK1抑制可逆转耐药，为肠癌化疗增敏提供新靶点。
+- **Pdk1依赖性代谢异质性通过细胞内在干扰素信号促进结直肠癌侵袭** ｜ bioRxiv (预印本) · 2026-10-09 ·  级 · 61 分 · [原文](https://doi.org/10.64898/2026.10.07.757309)
+  - 揭示Pdk1高表达细胞通过线粒体DNA释放激活干扰素信号驱动结直肠癌侵袭与化疗耐药，为靶向代谢异质性提供新策略。
+- **p38α MAPK整合APC/β-catenin/TCF致癌轴与GUCY2C抑癌轴的机制研究** ｜ bioRxiv (预印本) · 2026-10-06 ·  级 · 61 分 · [原文](https://doi.org/10.64898/2026.10.05.756833)
+  - 揭示p38α是连接APC/β-catenin/TCF致癌信号与GUCY2C抑癌轴的关键节点，为肠癌早期转化机制及靶向干预提供新思路。
+- **结直肠癌细胞内在分泌组重编程及其免疫排斥标志物NOTUM的鉴定** ｜ Iscience · 2026-10 · B 级 · 61 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42828282/)
+  - 该研究通过点击化学选择性解析患者来源CRC类器官分泌组，揭示MSS与MSI肿瘤分泌组差异，并提名NOTUM为免疫排斥标志物，为肠癌免疫微环境研究提供新靶点。
+- **ATF6α-ABCD3动态连接调控过氧化物酶体质量控制** ｜ bioRxiv (预印本) · 2026-10-06 ·  级 · 60 分 · [原文](https://doi.org/10.64898/2026.10.05.756567)
+  - 揭示ATF6α通过非转录机制连接内质网与过氧化物酶体，调控过氧化物酶体自噬，为靶向ATF6/ABCD3的结直肠癌和肝癌治疗提供新模板。
+- **实时计算机辅助检测对结肠镜高级别、微小及非肿瘤性病变检出影响的系统综述与Meta分析** ｜ Digestive Diseases and Sciences · 2026-10 · S 级 · 60 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842165/)
+  - CADe虽提高总体腺瘤检出率，但未证实增加高级别腺瘤或≥10mm病变检出，提示ADR提升不等于临床获益，肠癌筛查评估需关注病变分级而非仅看ADR。
+- **人工智能辅助结肠镜在结直肠癌筛查人群监测性结肠镜中的随机对照试验** ｜ Digestive and Liver Disease : Official Journal of the Italian Society of Gastroenterology and the Italian Association for the Study of the Liver · 2026-10 · A 级 · 60 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838765/)
+  - 在筛查项目监测性结肠镜中，CADe未提高腺瘤检出率却延长退镜时间，提示AI辅助价值可能因人群基线ADR高而受限，需重新界定其适用场景。
+- **加速生物学衰老与早发性结直肠癌风险：东亚大型前瞻性队列研究** ｜ Clinical Gastroenterology and Hepatology : the Official Clinical Practice Journal of the American Gastroenterological Association · 2026-10 · A 级 · 60 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833432/)
+  - 在近20万东亚人群中证实加速生物学衰老独立增加早发性结直肠腺癌风险，提示PhenoAge可用于优化早筛分层，为肝转移高危年轻人群识别提供新思路。
+- **队列规模空间宿主-微生物组预测结直肠癌术后复发** ｜ medRxiv (预印本) · 2026-10-05 ·  级 · 59 分 · [原文](https://doi.org/10.64898/2026.09.29.26363734)
+  - 该研究开发AlphaFISH空间多组学平台，揭示具核梭杆菌与肿瘤-免疫微环境的空间互作是结直肠癌恶性进展及术后复发的关键标志，为肠癌复发预警提供了新维度。
+- **ST-DISTAL：双分支图卷积与分布对齐用于细胞类型解卷积** ｜ bioRxiv (预印本) · 2026-10-02 ·  级 · 59 分 · [原文](https://doi.org/10.64898/2026.09.27.754868)
+  - ST-DISTAL通过双分支图卷积与分布对齐提升空间转录组细胞类型解卷积精度，在结直肠癌数据中展现空间连贯的细胞组织，为解析肠癌及肝转移微环境提供新工具。
+- **具核梭杆菌增强产毒脆弱拟杆菌介导的神经元丢失与肠道动力障碍** ｜ Nature Microbiology · 2026-10 · S 级 · 59 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823533/)
+  - 揭示ETBF通过NOD1-RIPK2-CASP9-CASP3通路致结肠肌间神经元凋亡，且具核梭杆菌代谢物2-羟基丁酸增强BFT毒性，为肠癌及肝转移微生态干预提供新靶点。
+- **结直肠腹膜转移CRS-HIPEC患者选择：大样本预后因素系统综述与Meta分析** ｜ European Journal of Surgical Oncology : the Journal of the European Society of Surgical Oncology and the British Association of Surgical Oncology · 2026-10 · S 级 · 59 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838780/)
+  - 该研究明确PCI、完全减瘤及严重并发症是CRS-HIPEC生存的最强预测因素，为结直肠腹膜转移患者筛选提供循证依据，提示应严格把握手术指征以避免过度治疗。
+- **饮食与翻译调控：营养塑造基因表达以对抗肿瘤与病毒** ｜ Cell Metabolism · 2026-10 · S 级 · 59 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838034/)
+  - 该研究揭示营养通过翻译调控影响基因表达，为肠癌及肝转移的代谢-翻译互作提供新视角，提示饮食干预可能成为辅助治疗策略。
+- **ENOPH1非酶促桥接KRAS与TGF-β/糖酵解驱动结直肠癌恶性进展** ｜ International Immunopharmacology · 2026-10 · B 级 · 59 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837790/)
+  - 揭示ENOPH1作为KRAS下游非催化枢纽，通过稳定SMAD4激活TGF-β/糖酵解促EMT，为KRAS突变肠癌提供代谢-信号联合靶点。
+- **机器人对比腹腔镜全直肠系膜切除术中保肛重建性切除的系统综述与Meta分析** ｜ The British Journal of Surgery · 2026-10 · S 级 · 59 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837183/)
+  - 机器人TME较腹腔镜更易实现一期吻合且不增加吻合口漏等并发症，为低位直肠癌保肛策略提供高级别证据，但需关注其对生活质量的真实获益。
+- **超越二维单层：三维培养系统解码结直肠癌耐药机制与治疗脆弱性** ｜ Cancer Medicine · 2026-10 · B 级 · 58 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42816767/)
+  - 系统阐述3D培养（类器官/球体）较2D更能重现结直肠癌耐药机制，并展示类器官药敏可前瞻预测患者反应，为肝转移个体化治疗提供功能精准肿瘤学路径。
+- **印度泛癌种微卫星不稳定与Lynch综合征的患病率研究** ｜ Familial Cancer · 2026-10 · S 级 · 58 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842020/)
+  - 该泛癌种研究证实肿瘤先行策略可高效识别Lynch综合征，MLH1 founder突变及PCR-FLA与IHC高一致性为肠癌及肝转移患者的胚系筛查与家系管理提供实践依据。
+- **LGR5高表达结直肠癌定义Wnt活跃干细胞样状态及多模式治疗脆弱性** ｜ bioRxiv (预印本) · 2026-10-05 ·  级 · 57 分 · [原文](https://doi.org/10.64898/2026.08.26.747295)
+  - 整合多组学定义LGR5-high肠癌为Wnt活跃干细胞样状态，提出按模态匹配的治疗靶点框架，为肝转移干细胞靶向提供新思路。
+- **干预前循环细胞因子在消化系统肿瘤中的预后价值：系统综述与Meta分析** ｜ Clinical & Translational Oncology : Official Publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico · 2026-10 · B 级 · 57 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844510/)
+  - 循环IL-6、CXCL及CCL家族升高可预测结直肠癌等消化系统肿瘤不良预后，支持其作为非侵入性预后标志物，但尚需前瞻验证以指导临床分层。
+- **基于人工智能的蛋白与miRNA血液检测用于结直肠癌筛查** ｜ Clinical and Translational Gastroenterology · 2026-10 · S 级 · 57 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837662/)
+  - 该AI血液检测对CRC和进展期腺瘤敏感性高，有望成为无创筛查新选择，但肝转移相关价值尚不明确。
+- **上皮SLC25A20缺失经ARG1棕榈酰化驱动免疫抑制性中性粒细胞重塑促进结直肠癌** ｜ Advanced Science (weinheim, Baden-wurttemberg, Germany) · 2026-10 · B 级 · 57 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829935/)
+  - 揭示SLC25A20缺失致长链脂肪酸外溢、经ZDHHC18介导ARG1棕榈酰化重塑中性粒细胞促免疫逃逸，为肠癌免疫治疗提供代谢-免疫新靶点。
+- **超突变过程为弱驱动突变提供先发优势：解释非典型KRAS变异** ｜ Plos Computational Biology · 2026-10 · B 级 · 57 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853888/)
+  - 该研究通过数学模型揭示超突变（POLE突变、MSI）通过提高突变率而非选择压力，使弱驱动KRAS变异富集，提示肠癌驱动基因检测需结合突变背景解读。
+- **StrainSpy：基于平均核苷酸相似度的宏基因组菌株水平关联精准检测新方法** ｜ bioRxiv (预印本) · 2026-10-03 ·  级 · 56 分 · [原文](https://doi.org/10.64898/2026.08.30.748153)
+  - StrainSpy突破菌株水平关联分析阈值限制，在结直肠癌队列中揭示大肠杆菌黏附素基因富集等新关联，为微生物组-肠癌研究提供更可靠的分析工具。
+- **术后第2天CRP<100 mg/L可识别结肠癌切除术后吻合口漏低风险患者** ｜ Annals of Surgery · 2026-10 · S 级 · 56 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42850694/)
+  - 双队列诊断准确性研究证实POD2 CRP<100 mg/L联合选择性POD3复评可安全支持ERAS路径下早期出院，为结肠癌术后吻合口漏风险分层提供了更早的生化标准。
+- **脱氧鞘脂激活cGAS-STING通路增强抗肿瘤免疫** ｜ Cell Reports · 2026-10 · B 级 · 56 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842366/)
+  - 揭示脱氧鞘脂通过线粒体DNA释放激活cGAS-STING增强抗肿瘤免疫，为肠癌代谢-免疫联合治疗提供新策略。
+- **ASTRA：跨平台零样本空间转录组超分辨率重建模型** ｜ bioRxiv (预印本) · 2026-10-06 ·  级 · 55 分 · [原文](https://doi.org/10.64898/2026.09.30.755663)
+  - ASTRA以跨平台预训练实现零样本空间转录组超分辨，无需逐切片建模，可提升结直肠组织分割与肿瘤边界识别，为肠癌及肝转移微环境的空间解析提供高效工具。
+- **COLO-COHORT研究第一阶段参与者基线特征：英国结直肠癌预防资源平台** ｜ BMJ Open Gastroenterology · 2026-10 · A 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823104/)
+  - COLO-COHORT建立了一个覆盖英国32中心、表型与生物样本丰富的前瞻性结肠镜队列，为结直肠癌预防及早期筛查研究提供了高质量平台资源。
+- **瑞典人群结直肠癌筛查中护士内镜医师与医师的结肠镜质量指标比较** ｜ Endoscopy · 2026-10 · S 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843632/)
+  - 基于全国筛查登记数据，护士内镜医师的腺瘤检出率等核心质量指标不劣于甚至优于医师，提示扩大护士内镜队伍可在保证质量前提下缓解筛查产能瓶颈。
+- **邻苯二甲酸二乙酯通过ALDOC促进结肠癌增殖、EMT及铁死亡抵抗** ｜ Food and Chemical Toxicology : an International Journal Published for the British Industrial Biological Research Association · 2026-10 · B 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838491/)
+  - 揭示环境污染物DEP经ALDOC轴驱动结肠癌EMT与铁死亡抵抗并关联免疫冷表型，为肠癌环境暴露相关预后分层及ALDOC靶向治疗提供新依据。
+- **OM-sqPCR一步法多重定量循环小RNA亚类用于结直肠癌分类** ｜ Iscience · 2026-10 · B 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42835620/)
+  - 开发OM-sqPCR平台实现循环小RNA亚类一步多重定量，四RNA分类器高精度诊断结直肠癌且早期有效，为肠癌无创早筛提供新工具。
+- **AIM2调控调节性T细胞免疫抑制并限制MC38结直肠癌抗PD-1疗效** ｜ Iscience · 2026-10 · B 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42835088/)
+  - 揭示AIM2是Treg免疫抑制程序的关键维持因子，靶向AIM2可增敏PD-1阻断，为肠癌免疫治疗耐药提供新靶点。
+- **减毒沙门氏菌递送GSDMD诱导焦亡增强结肠癌抗肿瘤免疫** ｜ Immunologic Research · 2026-10 · B 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830389/)
+  - 利用减毒沙门氏菌递送GSDMD质粒诱导焦亡并激活抗肿瘤免疫，为结肠癌基因治疗提供新策略，但肝转移模型验证尚缺。
+- **阻断全身吸收的SEAL纳米平台用于mRNA局部免疫治疗** ｜ Journal of Controlled Release : Official Journal of the Controlled Release Society · 2026-10 · B 级 · 55 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826902/)
+  - SEAL纳米平台通过阻断mRNA-LNP全身吸收，实现腹腔肿瘤局部高效递送并降低肝脾脱靶表达，为结直肠癌腹膜转移的mRNA免疫治疗提供新策略。
+- **结直肠癌手术预康复研究异质性：患者选择与方案设计** ｜ The American Surgeon · 2026-10 · B 级 · 54 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42847809/)
+  - 预康复可改善结直肠癌术后功能恢复并降低30天并发症，但疗效受年龄与方案组成影响，提示需个体化设计预康复策略。
+- **基于理性设计与分子对接筛选高亲和力β-葡萄糖苷酶亲和体用于侧流免疫分析** ｜ International Journal of Biological Macromolecules · 2026-10 · C 级 · 54 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838167/)
+  - 通过AlphaFold3与分子对接理性设计高稳定β-葡萄糖苷酶亲和体，并构建15分钟快速检测的侧流免疫层析平台，为肠道菌群相关结直肠癌早期筛查提供新型POCT工具。
+- **Y染色体丢失在透明细胞肾细胞癌及泛癌中转录沉默** ｜ bioRxiv (预印本) · 2026-10-09 ·  级 · 53 分 · [原文](https://doi.org/10.64898/2026.10.08.757570)
+  - 该研究证实LOY在ccRCC及泛癌中除剂量效应外转录沉默，提示Y染色体基因不太可能作为肠癌等肿瘤的转录驱动因子，对肠癌性别差异研究有警示意义。
+- **CSN3通过激活PI3K/AKT/mTOR通路促进结直肠癌进展** ｜ Molecular Biology Reports · 2026-10 · B 级 · 53 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42821034/)
+  - 该研究揭示CSN3在结直肠癌中高表达并通过PI3K/AKT/mTOR通路促进恶性表型，为CRC预后评估及AKT靶向治疗提供了新的潜在生物标志物与干预靶点。
+- **量化可干预癌症健康差异的因果分解框架** ｜ Biometrics · 2026-10 · C 级 · 53 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42847721/)
+  - 该研究提出非参数因果分解框架，可量化并排序结直肠癌生存差异中的可干预中介因素，为精准干预和政策制定提供方法学工具。
+- **血浆长链非编码RNA多变量模型用于结肠癌分子诊断及外部验证** ｜ Annals of Laboratory Medicine · 2026-10 · B 级 · 53 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42841257/)
+  - 血浆lncRNA多变量模型经外部验证可用于非转移性结肠癌早期检测，为肠癌无创筛查提供新思路，但肝转移场景尚待验证。
+- **谷氨酰胺修饰索拉非尼与阿托伐他汀共载纳米粒诱导结直肠癌杂合细胞死亡** ｜ AAPS Pharmscitech · 2026-10 · B 级 · 53 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42827216/)
+  - 该研究利用谷氨酰胺靶向纳米粒共递送索拉非尼与阿托伐他汀，通过铁死亡与凋亡杂合机制增强抗肠癌效果，为肠癌靶向联合治疗及肝转移灶递送提供新思路。
+- **结直肠癌糖基化：从肿瘤内在信号到宿主-微生物糖界面的多维调控** ｜ Biochimica et Biophysica Acta. Reviews on Cancer · 2026-10 · B 级 · 52 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843574/)
+  - 该综述提出糖基化是连接肿瘤信号、抗肿瘤免疫与微生物生态的多维界面，为肠癌免疫治疗与无创筛查提供新靶点。
+- **基于常规临床数据的多中心机器学习模型术前预测结直肠癌淋巴结转移及外部验证** ｜ JMIR Cancer · 2026-10 · B 级 · 52 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842824/)
+  - 利用常规术前数据构建的机器学习模型可在外部队列中适度预测淋巴结转移，并较单纯cT分期提供增量信息，为肠癌术前风险分层和个体化手术决策提供研究工具。
+- **CT示盲肠扩张合并小肠扩张与左侧梗阻性结肠癌术后不良结局相关：一项基于人群的多中心研究** ｜ Digestive Surgery · 2026-10 · S 级 · 52 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842497/)
+  - 术前CT盲肠≥9cm合并小肠扩张可识别急诊切除高危患者，桥接手术后并发症与造口率显著降低，提示CT指标可指导个体化治疗策略选择。
+- **肝硬化患者择期结直肠手术的实践模式与结局：一项基于人群的队列研究** ｜ Journal of the Canadian Association of Gastroenterology · 2026-10 · S 级 · 52 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42840335/)
+  - 基于人群数据证实肝硬化患者择期结直肠手术风险低于既往认知，MELD-Na评分可分层90天死亡率，为高危人群围手术期管理提供当代证据。
+- **微创与开放急诊右半结肠切除术治疗恶性梗阻：全国倾向性评分匹配队列研究** ｜ World Journal of Emergency Surgery : WJES · 2026-10 · B 级 · 52 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839242/)
+  - 全国性队列显示急诊梗阻性右半结肠癌微创入路可缩短住院并减少并发症，为选择性患者尝试MIS提供依据，但转化率34%提示需谨慎筛选。
+- **绝经时机、激素治疗与表观遗传衰老及乳腺癌结局：PLCO试验二次分析** ｜ medRxiv (预印本) · 2026-10-06 ·  级 · 51 分 · [原文](https://doi.org/10.64898/2026.10.04.26364714)
+  - 在PLCO队列中，绝经激素治疗虽升高乳腺癌发病风险，却与更低的乳腺癌死亡率和更好的总生存相关，且其血液甲基化组特征与绝经时机截然不同，提示激素治疗与绝经时机通过不同生物学通路影响肿瘤结局。
+- **儿童癌症幸存者化疗后白质微结构与认知关系的NODDI-Bingham双队列研究** ｜ bioRxiv (预印本) · 2026-10-01 ·  级 · 51 分 · [原文](https://doi.org/10.64898/2026.09.25.754456)
+  - 该研究用NODDI-Bingham揭示化疗后白质微结构-认知关系重构，为CRCI机制提供影像学证据；对肠癌化疗相关认知障碍及肝转移患者神经毒性研究有借鉴意义。
+- **NTRK基因融合对晚期成人癌症生存预后的因果效应：真实世界靶试验模拟** ｜ JCO Precision Oncology · 2026-10 · B 级 · 51 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842841/)
+  - 利用真实世界数据模拟随机试验，证实NTRK融合并非独立不良预后因素，为晚期肠癌等患者精准治疗决策提供高级别循证依据。
+- **雷公藤甲素作为多靶点抗癌剂：分子机制与转化前景的系统综述** ｜ Naunyn-schmiedeberg's Archives of Pharmacology · 2026-10 · B 级 · 51 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42836974/)
+  - 雷公藤甲素在结直肠癌等模型中展现多靶点抗肿瘤活性并可增敏化疗，但治疗窗窄、毒性大限制转化，提示肠癌研究应聚焦递送优化与毒性规避而非新靶点发现。
+- **直肠癌术前短程与长程放化疗的患者报告生活质量及功能结局比较** ｜ International Journal of Radiation Oncology, Biology, Physics · 2026-10 · A 级 · 51 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42828530/)
+  - 两种术前放疗策略术后2年生活质量与功能结局相当，仅长程放化疗围放疗期毒性更明显，支持个体化共同决策。
+- **肥胖诱导结直肠癌中内脏脂肪分泌组与肿瘤微环境的交互作用** ｜ Biochimica et Biophysica Acta. Molecular Basis of Disease · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42822680/)
+  - 系统阐述功能失调的内脏脂肪分泌组通过“肠-内脏脂肪-肿瘤轴”重塑结直肠癌微环境，为肥胖相关肠癌及肝转移提供潜在诊疗靶点。
+- **左氧氟沙星通过激活DDR-TP53-线粒体凋亡轴增强结直肠癌5-FU疗效** ｜ Iscience · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42787574/)
+  - 揭示常用抗生素左氧氟沙星可增敏5-FU并依赖TP53-DDR轴，为肠癌化疗联合用药及TP53分层治疗提供新思路。
+- **CAR-T细胞疗法在消化道肿瘤中的工程化改造：进展、挑战与克服异质性及免疫抑制屏障的策略** ｜ Neoplasia (new York, N.Y.) · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849114/)
+  - 系统梳理CAR-T治疗消化道肿瘤（含肠癌）的抗原异质性、免疫抑制微环境等瓶颈及应对策略，为肠癌及肝转移的细胞治疗转化提供路线图。
+- **工程化间充质干细胞小细胞外囊泡递送miR-124通过下调EZH2及抑制STAT3信号抑制结直肠癌进展** ｜ Medical Oncology (northwood, London, England) · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42848258/)
+  - 该研究证实工程化MSC-sEVs可高效递送miR-124，通过EZH2/STAT3双靶点抑制CRC增殖、EMT并逆转5-FU耐药，为肠癌（含肝转移）EV-miRNA治疗提供概念验证。
+- **七国集团结直肠癌筛查指南的全球差异：专家组构成与推荐意见比较** ｜ Journal of the Canadian Association of Gastroenterology · 2026-10 · C 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42840343/)
+  - 揭示G7国家结直肠癌筛查指南在起始年龄、筛查方式及制定透明度上的显著差异，提示国际证据需结合本国人群与卫生系统特征进行本土化转化。
+- **血浆与外周血单核细胞中DPYD基因型-表型相关性研究** ｜ Clinical Pharmacology and Therapeutics · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839587/)
+  - 系统评估血浆尿嘧啶及PBMC中DPD活性与DPYD基因型的相关性，为5-FU毒性风险分层提供基因型之外的补充表型检测依据，对肠癌个体化化疗有直接启示。
+- **75岁以上人群结肠镜筛查的倾向性匹配真实世界队列研究** ｜ JGH Open : an Open Access Journal of Gastroenterology and Hepatology · 2026-10 · S 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42835528/)
+  - 该研究显示75岁以上人群结肠镜筛查虽提高息肉和肠癌检出率，但未降低5年全因死亡率，且晚期穿孔风险增加，提示高龄筛查需个体化决策，对肠癌筛查策略制定有重要启示。
+- **VWA2通过Wnt/β-catenin信号通路驱动结肠癌生长与免疫逃逸** ｜ Iscience · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42835275/)
+  - 揭示VWA2在结肠癌中高表达并通过Wnt/β-catenin通路促进肿瘤生长和免疫逃逸，为肠癌（含肝转移）提供潜在新靶点及预后标志物。
+- **直肠癌新辅助放化疗后TME的长期肿瘤学结局：等待观察时代的警示** ｜ ANZ Journal of Surgery · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830221/)
+  - 该研究提供nCRT+TME的长期结局基准，强调病理分期和TRG的预后分层价值，为等待观察策略的疗效评估和患者选择提供重要参照。
+- **KRAS突变与结直肠癌静脉血栓栓塞风险：丹麦全国人群队列研究** ｜ Journal of Thrombosis and Haemostasis : JTH · 2026-10 · B 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829084/)
+  - 基于丹麦全国万人队列证实KRAS突变（尤其密码子13）显著增加结直肠癌患者静脉血栓栓塞风险，提示KRAS状态可用于VTE风险分层并指导血栓预防。
+- **NEO试验中ctDNA指导直肠癌器官保留的探索** ｜ JCO Precision Oncology · 2026-10 · A 级 · 50 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826364/)
+  - CO.28试验显示新辅助化疗后ctDNA可识别反应不佳的N0直肠癌患者，为器官保留决策提供无组织依赖的分子工具，提示ctDNA有望优化直肠癌TME与保肛策略选择。
+- **前瞻性队列研究中粪便样本采集对评估肠道微生物组与癌症关系的重要性** ｜ The Lancet. Microbe · 2026-10 · S 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42822491/)
+  - 强调诊断前粪便采样是确立肠道微生物组与癌症因果关联的关键，呼吁扩大队列、数据共享与跨区域合作，为肠癌微生物组研究指明方向。
+- **rs1801265多态性对中国人群DPD酶活性影响及相关因素分析** ｜ Pharmacogenomics · 2026-10 · A 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42820760/)
+  - 在中国人群中系统评估DPYD rs1801265对DPD酶活性的影响，为5-FU个体化用药及肠癌化疗毒性预测提供药物基因组学依据。
+- **系统性停用丝裂霉素C HIPEC对结直肠癌腹膜转移肿瘤学结局的影响：倾向评分匹配分析** ｜ Annals of Surgical Oncology · 2026-10 · S 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844527/)
+  - 该研究显示停用丝裂霉素C HIPEC未损害肿瘤学结局且减少并发症，提示CRC腹膜转移CRS后HIPEC价值有限，应重新审视其常规应用。
+- **联合混合Tobit模型提升零膨胀微生物组与结直肠癌关联检测** ｜ Plos Computational Biology · 2026-10 · C 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842625/)
+  - 提出联合混合Tobit方法处理零膨胀微生物组数据，提升结直肠癌与腺瘤相关差异菌群检测效能，为肠癌微生物标志物研究提供更稳健的统计工具。
+- **不可治愈性转移性实体瘤长期生存者的发病率与患病率趋势：荷兰全国回顾性队列研究** ｜ British Journal of Cancer · 2026-10 · B 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838997/)
+  - 该研究揭示转移性不可治愈肿瘤长期生存者规模迅速扩大，结直肠癌占比6.3%，提示肠癌肝转移长期生存管理需求上升，需关注这一新兴人群的照护与研究。
+- **Tectochrysin抑制结直肠癌进展并调控ERBB4相关信号通路** ｜ Food & Function · 2026-10 · B 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834836/)
+  - 该研究揭示蜂胶黄酮Tectochrysin通过调控ERBB4信号抑制肠癌生长及肺肝转移，为肠癌肝转移的天然产物干预提供了新靶点与临床前证据。
+- **术前MRI骨盆测量预测直肠癌手术难度的系统综述与Meta分析** ｜ Colorectal Disease : the Official Journal of the Association of Coloproctology of Great Britain and Ireland · 2026-10 · B 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834699/)
+  - 术前MRI骨盆测量（尤其ISD、ITD）可辅助预测直肠癌TME手术难度，但方法学异质性大，亟需标准化方案以推动个体化手术规划。
+- **结直肠癌与多发性骨髓瘤中癌相关成纤维细胞异质性及治疗启示** ｜ The Journal of Physiology · 2026-10 · B 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830694/)
+  - 系统比较CRC与MM中CAF异质性，揭示KRAS/TP53驱动基质重塑及唾液酸-Siglec免疫逃逸，为肠癌肝转移微环境靶向治疗提供新思路。
+- **结直肠癌术后无症状门肠系膜静脉血栓：发生率、自然史与管理启示** ｜ World Journal of Surgery · 2026-10 · S 级 · 49 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42894429/)
+  - 约4%的肠癌术后患者经标准化CT检出无症状门肠系膜静脉血栓，多局限于肝内分支且呈良性自限性，提示应避免反射性抗凝，支持个体化保守管理。
+- **涎腺腺样囊性癌中SWI/SNF染色质重塑、mRNA剪接与m6A甲基化的协同改变** ｜ bioRxiv (预印本) · 2026-10-08 ·  级 · 48 分 · [原文](https://doi.org/10.64898/2026.10.07.757230)
+  - 该研究揭示染色质重塑、RNA剪接与m6A甲基化机器的协同失调是涎腺腺样囊性癌的新标志，提示表观转录组互作网络可能成为肠癌及肝转移的潜在治疗靶点。
+- **HRD评分与pMMR局部晚期直肠癌新辅助短程放疗序贯化免疗效的关联** ｜ Cancer Reports (hoboken, N.J.) · 2026-10 · A 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42822843/)
+  - HRD评分分层可预测pMMR直肠癌新辅助放疗联合免疫治疗pCR，高HRD伴CD8+T细胞富集，提示可据此精准筛选获益人群。
+- **CT结肠成像在结直肠癌筛查中的现状与前景** ｜ Radiographics : a Review Publication of the Radiological Society of North America, Inc · 2026-10 · S 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42821450/)
+  - CTC获美国医保覆盖，成为与结肠镜等效的结直肠癌筛查手段，可风险分层选择性切除息肉，减少假病与穿孔风险，但临床推广仍面临障碍。
+- **系统炎症标志物对RAS/BRAF野生型mCRC抗EGFR治疗的预后价值** ｜ Colorectal Disease : the Official Journal of the Association of Coloproctology of Great Britain and Ireland · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42798176/)
+  - 在RAS/BRAF野生型mCRC中，NLR、PLR及SII是抗EGFR治疗独立预后因素，且与AREG/EREG无关，提示炎症标志物可作为预后分层补充工具。
+- **基于适配体发现MARK2作为转移性结直肠癌靶向成像与外泌体检测的潜在生物标志物** ｜ Bioorganic Chemistry · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843135/)
+  - 该研究通过适配体W14发现MARK2驱动结直肠癌迁移侵袭，并开发靶向成像探针与外泌体液体活检工具，为转移性肠癌早期诊断提供了新策略。
+- **Lynch综合征与散发性结直肠癌循环miRNA组分子状态差异研究** ｜ Molecular Oncology · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42841377/)
+  - 揭示Lynch综合征携带者存在介于健康与癌之间的过渡性循环miRNA组状态，为遗传性肠癌早期分子分层提供新思路。
+- **Feasibility of robotic-assisted right colectomy using the "squeezing approach".** ｜ Surgery Today · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42831930/)
+  - To evaluate the initial outcomes regarding the safety and feasibility of robotic-assisted right colectomy (RRC) using the squeezing approach compared to conventional laparoscopic r…
+- **地喹氯铵通过ROS介导的铁死亡选择性清除静止期结直肠癌细胞** ｜ FEBS Open Bio · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42831305/)
+  - 揭示静止期癌细胞存在可靶向的氧化还原脆弱性，DQ可选择性诱导其铁死亡，为清除休眠癌细胞、预防肠癌复发提供老药新用策略。
+- **脂质蓄积促进结直肠癌细胞的致瘤行为** ｜ Journal of Cellular and Molecular Medicine · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829449/)
+  - 高脂血症通过脂肪酸摄取和PLIN2/CPT1A介导的脂滴蓄积促进结直肠癌增殖、迁移和EMT，提示PLIN2可作为肥胖相关肠癌进展的标志物与治疗靶点。
+- **改良内镜负压治疗与覆膜支架治疗结直肠吻合口漏的多中心倾向性分析** ｜ Revista de Gastroenterologia de Mexico (english) · 2026-10 · S 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42855417/)
+  - 多中心倾向匹配显示内镜负压治疗吻合口漏的闭合率、住院时长及造口还纳率优于覆膜支架，为肠癌术后严重并发症的微创处理提供了更优选择。
+- **全面基因组分析后治疗推荐与实施在癌种间的差异：一项全国性真实世界研究** ｜ Oncology · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853769/)
+  - 全国性真实世界数据显示，CGP后结直肠癌治疗推荐率约54%，但实际实施率仅8%，远低于肺癌的17%，提示肠癌CGP结果向临床治疗转化存在显著障碍，需优化可及性与试验入组策略。
+- **保留左结肠动脉与腹腔镜直肠癌根治术后吻合口漏风险的倾向性评分匹配分析** ｜ Updates in Surgery · 2026-10 · S 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853540/)
+  - 保留左结肠动脉可降低腹腔镜直肠癌术后吻合口漏发生率，虽延长手术时间但不增加其他并发症，支持其在直肠癌手术中的临床应用价值。
+- **早发性结直肠癌治疗启动时间的趋势、差异与结局** ｜ JGH Open : an Open Access Journal of Gastroenterology and Hepatology · 2026-10 · B 级 · 48 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42851759/)
+  - 基于国家癌症数据库的大样本分析显示，早发性结直肠癌治疗启动时间逐年延长，且与保险状态、社会经济劣势和种族显著相关，提示需关注治疗公平性。
+- **术中智能刀（REIMS）在成人肿瘤外科中的诊断准确性与临床结局：系统综述** ｜ Journal of Surgical Oncology · 2026-10 · B 级 · 47 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834804/)
+  - iKnife实时质谱组织鉴别在结直肠癌等肿瘤中灵敏度60-100%、特异度80.7-100%，但缺乏生存与复发硬终点证据，提示肠癌肝转移切缘判定需前瞻多中心验证。
+- **代谢减重手术预防肥胖患者肿瘤：IFSO基于GRADE的立场声明** ｜ Obesity Surgery · 2026-10 · C 级 · 47 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834256/)
+  - 代谢减重手术与结直肠癌等肥胖相关肿瘤发病率下降相关，提示持续减重可降低肠癌风险，为肠癌一级预防提供新思路。
+- **基于荧光各向异性的高通量无扩增内源基因表达检测方法** ｜ Cell Reports Methods · 2026-10 · C 级 · 47 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833216/)
+  - CFAR为低成本、无扩增的高通量内源基因表达检测提供新工具，并在结直肠癌细胞中筛选出可下调MYC的FDA药物，提示药物重定位潜力。
+- **机器人与腹腔镜结直肠手术学习曲线的系统综述** ｜ Journal of Robotic Surgery · 2026-10 · B 级 · 47 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42828702/)
+  - 该研究系统整合了微创结直肠手术学习曲线证据，提出标准化评估框架；提示机器人手术学习阈值较低可能源于腹腔镜技能迁移，对肠癌微创培训与肝转移手术推广具有指导意义。
+- **肠癌与胰腺癌恶病质模型铁代谢调控差异** ｜ bioRxiv (预印本) · 2026-10-08 ·  级 · 46 分 · [原文](https://doi.org/10.64898/2026.10.02.756162)
+  - 揭示恶病质铁代谢紊乱具癌种特异性，肠癌以缺铁性贫血为主，提示肠癌恶病质患者补铁策略需按癌种个体化。
+- **SNX2而非SNX1调控HCT116结直肠癌细胞中MET受体的早期内体转运** ｜ bioRxiv (预印本) · 2026-10-07 ·  级 · 46 分 · [原文](https://doi.org/10.64898/2026.10.06.755412)
+  - 揭示SNX2特异性调控MET内体转运与AKT持续激活，且低表达与CRC不良预后相关，为MET驱动型肠癌的转运靶向干预提供新线索。
+- **巨型细菌Epulopiscium在肠道微生物组中的广泛宿主分布及与结直肠癌的关联** ｜ bioRxiv (预印本) · 2026-10-01 ·  级 · 46 分 · [原文](https://doi.org/10.64898/2026.09.30.750856)
+  - 该研究通过大规模16S rRNA分析发现巨型细菌Epulopiscium广泛存在于人类肠道，且在结直肠癌中丰度升高，提示其可能作为肠癌微生物标志物，并强调形态学与测序结合的必要性。
+- **人源蛋白标志物在结直肠癌检测中优于细菌蛋白** ｜ International Journal of Cancer · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42817615/)
+  - 粪便宏蛋白质组中宿主蛋白而非细菌蛋白驱动结直肠癌及进展期腺瘤的无创诊断价值，提示未来粪便标志物开发应优先聚焦人源蛋白。
+- **Snail诱导的同型细胞套叠结构介导结直肠癌细胞逃逸NK细胞杀伤** ｜ Experimental and Molecular Pathology · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843277/)
+  - 揭示Snail通过E-cadherin依赖的同型细胞套叠结构帮助结直肠癌细胞逃逸NK细胞毒性，为免疫治疗耐药患者提供新靶点。
+- **意大利东北部17年人群登记研究：结直肠癌发病与生存的年龄特异性模式** ｜ Digestive and Liver Disease : Official Journal of the Italian Society of Gastroenterology and the Italian Association for the Study of the Liver · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833921/)
+  - 基于人群登记数据揭示早发、筛查适龄及晚发肠癌的发病与生存差异，提示应坚持筛查并重视动态预后评估，对肝转移高危人群的早期识别与分层管理具有参考价值。
+- **直肠癌细胞球多尺度计算机模拟框架预测短程放疗反应** ｜ Physics in Medicine and Biology · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826757/)
+  - 建立基于Cellular Potts与TLKM的多尺度模拟平台，可预测直肠癌球体在5×5 Gy短程放疗中的再氧合与坏死动态，为个体化放疗方案与粒子治疗研究提供计算工具。
+- **铁代谢、生物膜与结直肠癌：粪肠球菌致病机制新见解** ｜ APMIS : Acta Pathologica, Microbiologica, et Immunologica Scandinavica · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826073/)
+  - 该综述将铁稳态置于粪肠球菌致病性核心，提示铁靶向与eDNA干扰策略或可干预炎症驱动的结直肠癌发生，为肠癌微生物机制研究提供新方向。
+- **丹麦癌症幸存者治疗后新发合并症的社会决定因素差异研究** ｜ International Journal of Cancer · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853669/)
+  - 该研究揭示社会健康决定因素（尤其低教育水平）显著加剧癌症幸存者治疗后新发合并症风险，提示肠癌幸存者随访应纳入社会因素分层管理。
+- **肿瘤信号靶向MyoD-Myogenin调控级联抑制癌症恶病质中的肌生成** ｜ The Biochemical Journal · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42852949/)
+  - 揭示C26结肠癌恶病质信号通过抑制MyoD-MyoG级联阻断肌生成，为肠癌恶病质肌肉消耗提供干预靶点，提示肝转移患者肌肉保护策略。
+- **MBD4 Arg512突变的结构与功能后果及其在结直肠癌中的意义** ｜ The Biochemical Journal · 2026-10 · B 级 · 46 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42852938/)
+  - 揭示MBD4 R512在碱基切除修复中的关键作用，R512W/Q突变破坏修复活性，为结直肠癌错配修复缺陷和突变负荷提供机制解释。
+- **帕博利珠单抗联合维迪西妥单抗治疗HER2阳性转移性结直肠癌** ｜ The Oncologist · 2026-10 · A 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42820775/)
+  - 该Ⅱ期研究显示PD-1抑制剂联合HER2-ADC在经治HER2阳性MSS/pMMR mCRC中疗效有限（ORR仅13.3%），提示该联合策略在晚期肠癌中需谨慎评估，肝转移等耐药机制值得深入探索。
+- **聚苯乙烯纳米塑料对结直肠癌的影响：网络毒理学与体外验证整合研究** ｜ Toxicology and Applied Pharmacology · 2026-10 · B 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843601/)
+  - 该研究整合网络毒理学与体外实验，揭示聚苯乙烯纳米塑料通过氧化应激、凋亡及炎症途径影响结直肠癌，提示环境纳米塑料可能是CRC潜在风险因素，为肠癌环境病因学研究提供新方向。
+- **安大略省结肠镜质量策略的系统实施与成效评估** ｜ Journal of the Canadian Association of Gastroenterology · 2026-10 · S 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42840572/)
+  - 该文展示了卫生系统层面结肠镜质量提升的可行路径，为肠癌筛查质量改进提供实践范本，间接助力肝转移预防。
+- **基于二代测序的晚期实体瘤分子分型与治疗：社区学术癌症中心的真实世界经验** ｜ Cancer Medicine · 2026-10 · A 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839555/)
+  - 在社区学术中心开展院内NGS和分子肿瘤委员会，可使过半晚期实体瘤患者获得FDA批准（标签内或超适应症）治疗机会，为肠癌肝转移等难治患者的精准治疗提供可行路径。
+- **粪便筛查异常后结肠镜随访：完成率、及时性与实施策略的系统综述** ｜ BMJ Open · 2026-10 · S 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833723/)
+  - 粪便筛查异常后结肠镜完成率仅30%-80%，差距取决于追踪、责任归属与导航等实施策略；提示肠癌筛查链条的薄弱环节在随访落实而非初筛。
+- **SERPINE1/PAI-1构象转换与空间异质性驱动肿瘤进展及治疗抵抗** ｜ Critical Reviews in Oncology/hematology · 2026-10 · B 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826913/)
+  - 该综述揭示PAI-1功能悖论源于构象转换与空间异质性，为肠癌肝转移中SERPINE1的微环境依赖作用及靶向策略提供新视角。
+- **胆汁酸信号在健康与疾病中的作用** ｜ Molecular Biomedicine · 2026-10 · B 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42825856/)
+  - 系统梳理胆汁酸经核受体与膜受体的多效信号网络，为理解胆汁酸代谢紊乱在结直肠癌发生及肝转移微环境调控中的潜在作用提供机制框架。
+- **加速康复方案在IBD结直肠手术中是否增加术后出血并发症** ｜ American Journal of Surgery · 2026-10 · B 级 · 45 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42854344/)
+  - ERAS在IBD结直肠手术中与术后出血增加相关，但多为自限性；提示需权衡NSAIDs/COX-2抑制剂使用，优化ERAS镇痛方案。
+- **丙酸代谢相关基因特征预测结直肠癌预后及免疫特征** ｜ Medical Oncology (northwood, London, England) · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42848099/)
+  - 该研究构建丙酸代谢相关四基因预后模型并揭示其与免疫微环境及治疗敏感性的关联，为肠癌风险分层和个体化治疗提供代谢-免疫新视角，但肝转移相关性未直接涉及。
+- **circMTCL1通过miR-145-5p/BMP3轴抑制结直肠癌细胞生长并调控MAPK信号通路** ｜ Medical Oncology (northwood, London, England) · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42848091/)
+  - 该研究揭示circMTCL1作为ceRNA吸附miR-145-5p上调BMP3、抑制MAPK通路，为结直肠癌提供新的抑癌靶点与预后标志物线索。
+- **结直肠癌中VENTANA M1克隆MLH1点状核染色的三种模式及其误判风险** ｜ Applied Immunohistochemistry & Molecular Morphology : AIMM · 2026-10 · S 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42847237/)
+  - 揭示VENTANA M1克隆MLH1点状核染色实为MLH1缺失，易被误判为pMMR，直接影响Lynch筛查与免疫治疗决策，需在病理判读中警惕。
+- **术前[68Ga]FAPI PET/CT无创识别结直肠癌肿瘤出芽** ｜ European Radiology · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844391/)
+  - 首次证实FAPI PET/CT可无创评估结直肠癌肿瘤出芽这一侵袭前沿生物学标志，为术前风险分层及肝转移高危患者筛选提供新影像手段。
+- **水下与传统结直肠内镜黏膜下剥离术的短期与长期疗效：一项大型回顾性真实世界队列研究** ｜ Endoscopy · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843801/)
+  - 水下ESD可提高结直肠病变剥离速度，但未缩短手术时间或改善其他结局，其临床价值尚待前瞻性验证，对肝转移预防意义有限。
+- **吲哚杂合体：靶向EGFR的多面抗癌新药（2021年至今）** ｜ Archiv Der Pharmazie · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839779/)
+  - 系统梳理吲哚类EGFR杂合体的结构优化与耐药克服策略，为肠癌EGFR靶向耐药（T790M/C797S、MET扩增）提供新一代抑制剂设计蓝图。
+- **脂滴相关蛋白整合脂质代谢、细胞周期与细胞骨架重塑促进结肠癌生长** ｜ Journal of Lipid Research · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838434/)
+  - 该研究基于脂滴蛋白质组构建151个脂滴相关蛋白的转录组特征，揭示脂滴相关蛋白通过整合脂质代谢、细胞周期和细胞骨架重塑驱动结肠癌生长，为肠癌代谢靶向治疗提供新候选标志物。
+- **美国主要消化道肿瘤发病趋势与2032年预测：基于SEER的2000-2022年分析** ｜ Digestive Diseases (basel, Switzerland) · 2026-10 · B 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853717/)
+  - 该研究预测早发性结直肠癌发病将持续上升而老年组下降，提示需针对年轻人群优化筛查起始年龄与早期检测策略。
+- **Cox比例风险模型中暴露易感时间窗的样条建模方法** ｜ Statistics in Medicine · 2026-10 · C 级 · 44 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42852866/)
+  - 提出限制性立方样条结合多重插补处理滞后暴露与缺失数据，为肠癌病因学中饮食等暴露的易感窗口分析提供更稳健方法学工具。
+- **多模态免疫特征评分作为泛癌生物标志物预测MSS结直肠癌及罕见实体瘤免疫治疗获益** ｜ medRxiv (预印本) · 2026-10-09 ·  级 · 43 分 · [原文](https://doi.org/10.64898/2026.10.07.26364989)
+  - IPS评分可识别MSS结直肠癌中少数可能从免疫检查点抑制剂获益的患者，为传统认为免疫治疗无效人群提供了分层新思路，但样本量小需前瞻验证。
+- **恶病质相关诊断对胰腺癌、肺癌和结直肠癌患者医疗资源利用及费用的影响：美国保险索赔数据库分析** ｜ Journal of Managed Care & Specialty Pharmacy · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42808542/)
+  - 该研究基于美国大规模保险索赔数据，证实恶病质相关诊断显著增加结直肠癌等患者的医疗资源利用和费用，提示肠癌恶病质管理具有重要临床与经济价值。
+- **意大利拉齐奥地区癌症发病与死亡的教育不平等：基于人群的癌症登记研究** ｜ Cancer Epidemiology · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843098/)
+  - 教育水平低下与结直肠癌发病后5年死亡风险显著升高相关（男性HR 1.40），提示肠癌诊疗路径中社会经济因素需被纳入预后评估与干预设计。
+- **提升贫困社区肠癌筛查参与度的干预策略：系统综述** ｜ Journal of Public Health (oxford, England) · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842613/)
+  - 系统综述提示电话提醒、面对面咨询、优化书面沟通及多组分干预可提升贫困人群肠癌筛查参与率，为缩小筛查的社会经济不平等提供方向，但证据质量有限。
+- **老年中轴型脊柱关节炎合并结直肠癌患者的生存结局：基于SEER-Medicare的人群研究** ｜ Arthritis Care & Research · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834520/)
+  - 合并中轴型脊柱关节炎的老年结直肠癌患者总生存与癌因生存反而更优，提示免疫炎症背景或治疗暴露可能影响肠癌预后，值得在肝转移人群中进一步验证。
+- **2001-2020年英格兰儿童青少年及年轻成人癌症发病趋势** ｜ European Journal of Cancer (oxford, England : 1990) · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833137/)
+  - 该研究揭示年轻成人结直肠癌发病率在2015年后显著下降，提示阑尾类癌重新分类等诊断因素可能影响趋势解读，对肠癌流行病学及肝转移研究具参考价值。
+- **聚合物纳米颗粒靶向Wnt/β-catenin通路治疗APC突变型结直肠癌的研究进展** ｜ Journal of Biomaterials Science. Polymer Edition · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42831658/)
+  - 系统梳理了聚合物纳米颗粒递送siRNA/CRISPR/化疗药靶向APC-Wnt通路治疗结直肠癌的临床前证据，为肝转移靶向递送提供新思路。
+- **引流液脂肪酶作为结直肠切除术后吻合口漏的生物标志物：一项前瞻性观察性队列研究** ｜ ANZ Journal of Surgery · 2026-10 · A 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42827031/)
+  - 本研究首次评估引流液脂肪酶（DFL）在无临时回肠造口的低位结直肠吻合术后预测吻合口漏的价值，发现术后第3天DFL<64 U/L具有97.6%的阴性预测值，可作为排除吻合口漏的强阴性预测指标，为临床早期识别低风险患者、避免不必要的临时造口提供了新思路。
+- **KRAS突变靶向治疗研究进展综述** ｜ Bioorganic Chemistry · 2026-10 · B 级 · 43 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42854602/)
+  - 系统梳理KRAS突变致癌机制及靶向药物研发进展，为结直肠癌KRAS突变患者精准治疗提供新方向。
+- **无需碱基转化的PCR兼容性多位点cfDNA甲基化定量平台Delta-HLD** ｜ medRxiv (预印本) · 2026-10-09 ·  级 · 42 分 · [原文](https://doi.org/10.64898/2026.06.11.26354897)
+  - Delta-HLD通过杂交-连接-甲基化敏感酶切实现原生cfDNA多位点甲基化面板级定量，无需碱基转化，为肠癌液体活检提供低输入、可扩展的新方法。
+- **非转移性右半结肠腺癌预后因素：ATCCR数据库多中心回顾性分析** ｜ Colorectal Disease : the Official Journal of the Association of Coloproctology of Great Britain and Ireland · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42806446/)
+  - 该多中心真实世界研究提示CME在升结肠与肝曲肿瘤中或有生存获益，但缺乏MSI/RAS/BRAF分子校正，结论仅为假说生成，需前瞻验证。
+- **生物材料重编程活体生物治疗产品用于肠道疾病治疗** ｜ Biomaterials · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849091/)
+  - 系统总结生物材料修饰细菌策略，可提升肠道定植与靶向性，为肠癌及肝转移的活菌治疗提供工程化思路。
+- **超越形态学：结直肠癌肿瘤出芽、脉管侵犯及神经侵犯的生物学再认识** ｜ The American Surgeon · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42841850/)
+  - 该综述以EMT为统一框架解释肿瘤出芽、LVI、PNI的侵袭性本质，为II期肠癌预后异质性及生物学指导的手术决策提供新视角。
+- **滑石粉暴露与癌症风险：伞状综述及重叠分析** ｜ Cancer Reports (hoboken, N.J.) · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833996/)
+  - 职业滑石粉暴露与结直肠癌风险升高相关（SIR 1.59），但证据质量普遍偏低，提示需在肠癌病因学研究中关注职业暴露因素并提升证据等级。
+- **P-选择素糖蛋白配体-1在早发与晚发结直肠癌中的病理生理作用** ｜ Biomedicine & Pharmacotherapy = Biomedecine & Pharmacotherapie · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42854450/)
+  - 综述提出PSGL-1作为连接早发与晚发结直肠癌的分子桥梁，关联慢性肠道炎症、促瘤通路与肠道菌群，为肠癌机制研究和靶向治疗提供新方向。
+- **鞘脂密码在肿瘤中的异质性作用及治疗前景** ｜ Molecular Biology Reports · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853313/)
+  - 系统梳理鞘脂代谢在包括结直肠癌在内的多种肿瘤中的类型特异性作用，提示靶向鞘脂通路（如SphK1/2、神经节苷脂）可能为肠癌及肝转移提供新治疗策略与生物标志物。
+- **PROP评分外部验证：预测结直肠腹膜转移完全减瘤可行性** ｜ Langenbeck's Archives of Surgery · 2026-10 · B 级 · 42 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853287/)
+  - PROP评分在独立欧洲队列中验证可术前预测结直肠腹膜转移完全减瘤可能性，有助于优化CRS±HIPEC患者选择，避免无效手术。
+- **塞来昔布联合NDGA经p62/KEAP1诱导结直肠癌非经典非自噬依赖性氧化还原细胞死亡** ｜ bioRxiv (预印本) · 2026-10-08 ·  级 · 41 分 · [原文](https://doi.org/10.64898/2026.09.29.753356)
+  - 该研究揭示C+N通过p62/KEAP1轴诱导不依赖凋亡与自噬的氧化还原死亡，可克服CRC遗传异质性，为肝转移耐药治疗提供新策略。
+- **印度人群遗传性肿瘤基因检测十年回顾：结直肠癌诊断率最高** ｜ medRxiv (预印本) · 2026-10-05 ·  级 · 41 分 · [原文](https://doi.org/10.64898/2026.07.29.26358035)
+  - 印度2.3万例胚系检测显示结直肠癌诊断率最高（42%），支持肠癌遗传筛查扩大化，对肝转移患者的胚系评估与家系管理有启示。
+- **种族与城乡交叉性对阿拉巴马州持续性贫困县癌症死亡率差异的影响** ｜ Cancer Medicine · 2026-10 · B 级 · 41 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42812073/)
+  - 持续性贫困与黑人农村居民身份交叉叠加显著增加癌症死亡风险，提示肠癌研究需纳入社会决定因素与多层次干预视角。
+- **三维组织图像中肿瘤密度轨迹的条件细胞群关联估计** ｜ bioRxiv (预印本) · 2026-10-08 ·  级 · 40 分 · [原文](https://doi.org/10.64898/2026.04.16.719017)
+  - ISPat-3D框架通过各向异性高斯过程与多研究因子分析，在三维结直肠癌CyCIF图像中解析肿瘤密度分层的条件细胞共定位模式，为肝转移微环境空间生态研究提供方法学工具。
+- **血管增殖指数在II/III期结直肠癌中的预后价值：与微血管密度的对比研究** ｜ Anticancer Research · 2026-10 · B 级 · 40 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823187/)
+  - 该研究提出VPI作为增殖性内皮细胞的定性标志物，可能优于传统MVD，为结直肠癌预后评估提供新思路，但样本量小需外部验证。
+- **定量FIT阈值用于结直肠癌筛查优先级分诊与风险分层** ｜ Cancer Epidemiology, Biomarkers & Prevention : a Publication of the American Association for Cancer Research, Cosponsored By the American Society of Preventive Oncology · 2026-10 · S 级 · 40 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42817711/)
+  - 定量FIT值可精细化预测结直肠癌风险，优化资源受限下结肠镜分配，提示肠癌筛查应向风险分层路径转变。
+- **专科遗传性结直肠癌登记队列中院内基因检测的诊断产出** ｜ Colorectal Disease : the Official Journal of the Association of Coloproctology of Great Britain and Ireland · 2026-10 · S 级 · 40 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42803145/)
+  - 在专科肠道医院内开展主流化基因检测，对dMMR结直肠癌、多腺瘤及40岁以下患者诊断产出高，提示肠癌遗传筛查可脱离传统遗传门诊路径，直接指导终身管理。
+- **超越总手术时间：结直肠切除术中机器人手术分阶段效率与术后并发症的多术者队列研究** ｜ Journal of Robotic Surgery · 2026-10 · B 级 · 40 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42828597/)
+  - 机器人结直肠手术总时长每增加30分钟，30天并发症/再入院/再手术及90天死亡复合终点风险升高8%；分阶段时间未显示独立关联，提示累积经验与整体效率优化比单纯缩短某一阶段更重要。
+- **冷圈套息肉切除术联合黏膜下注射对比单纯冷圈套切除术治疗3-9mm结直肠息肉：随机对照试验** ｜ Journal of Gastroenterology and Hepatology · 2026-10 · A 级 · 40 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42855428/)
+  - 在避免强行牵拉并必要时转EMR的策略下，3-9mm息肉冷切的不完全切除率极低，黏膜下注射未进一步降低IRR但减少EMR转换，提示临床可按息肉大小与操作难度个体化选择。
+- **热疗通过诱导CD8增强PD-L1表达提升免疫检查点抑制剂疗效** ｜ Anticancer Research · 2026-10 · B 级 · 39 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823185/)
+  - 热疗通过CD8-STAT1-IRF1轴上调结直肠癌PD-L1表达，为热疗联合ICI克服耐药提供机制依据，提示肝转移局部热疗可能增敏系统免疫治疗。
+- **葡萄酒摄入与癌症风险：Meta分析的伞状综述** ｜ Cancer Epidemiology · 2026-10 · B 级 · 39 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849145/)
+  - 伞状综述显示葡萄酒与结直肠癌风险无显著关联，提示肠癌预防宣教中不宜将葡萄酒视为独立危险因素，但证据异质性大，需谨慎解读。
+- **从临床试验到常规实践：基层医生参与老年结直肠癌筛查共享决策干预的质性研究** ｜ Family Practice · 2026-10 · C 级 · 39 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837109/)
+  - 揭示PRIMED试验中共享决策培训与提醒在基层落地时的障碍与促进因素，提示肠癌筛查干预需系统级整合以减轻医生负担，对肝转移早期筛查推广亦有借鉴意义。
+- **美国城乡至边疆连续体中的癌症风险因素、筛查与社区社会经济剥夺差异** ｜ Journal of the National Cancer Institute. Monographs · 2026-10 · B 级 · 39 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830440/)
+  - 研究揭示社区社会经济剥夺与地理区域对结直肠癌筛查差异的影响大于传统城乡分类，提示应优先干预弱势社区以提升筛查率。
+- **抑郁与结直肠癌筛查指南依从性的关联：基于BRFSS的横断面研究** ｜ The Mental Health Clinician · 2026-10 · B 级 · 39 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42827885/)
+  - 抑郁显著降低结直肠癌筛查依从性，非裔美国人合并抑郁者风险最高，提示肠癌筛查推广需整合心理健康干预。
+- **可溶性聚合物降低等离子体生物传感器检测癌胚抗原的非特异性相互作用** ｜ Analytical and Bioanalytical Chemistry · 2026-10 · C 级 · 38 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844449/)
+  - 新型聚HPMA阻断剂显著降低SPR生物传感器检测CEA时的非特异性结合，将检测限提升2.8倍，为肠癌标志物超灵敏检测提供新工具。
+- **加速康复外科路径下微创结直肠肿瘤手术延长静脉血栓预防的作用** ｜ Surgical Endoscopy · 2026-10 · B 级 · 38 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844369/)
+  - 在成熟ERAS路径下微创结直肠肿瘤切除术后症状性VTE发生率极低，延长血栓预防虽显著降低VTE但绝对获益小，提示需个体化筛选高危患者而非普遍延长预防。
+- **基于间期的结直肠肿瘤性息肉生长估算及其在息肉筛查中的价值：回顾性队列研究** ｜ The American Surgeon · 2026-10 · B 级 · 38 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842606/)
+  - 该研究将肿瘤生长动力学模型引入息肉切除后监测，提示代谢指标联合内镜参数或可优化复发风险分层，但证据尚需前瞻验证。
+- **美国原住民与阿拉斯加原住民癌症患者在传统Medicare中的结局差异** ｜ JAMA Network Open · 2026-10 · B 级 · 38 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842249/)
+  - 该研究揭示原住民癌症患者死亡率近翻倍、结直肠癌筛查率最低且临终关怀利用不足，提示肠癌防控需关注少数族裔健康公平与筛查可及性。
+- **二氧化硅包覆金纳米星在结直肠癌细胞中的膜相关光毒性研究** ｜ ACS Applied Bio Materials · 2026-10 · B 级 · 38 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837296/)
+  - 揭示AuNS@SiO2的光毒性具有细胞系依赖性，与膜相互作用强度相关，为结直肠癌光热治疗纳米平台优化提供膜层面机制依据。
+- **REVERCE II：瑞戈非尼序贯抗EGFR对比反向序贯治疗难治性转移性结直肠癌的II期随机试验** ｜ The Oncologist · 2026-10 · A 级 · 38 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830449/)
+  - 尽管因入组缓慢提前终止，REVERCE II提示瑞戈非尼先于抗EGFR治疗可能带来生存获益，为难治性mCRC的序贯策略提供了初步随机证据，值得进一步验证。
+- **医疗债务负担与美国县域晚期结直肠癌等恶性肿瘤发病率的相关性研究** ｜ JAMA Network Open · 2026-10 · B 级 · 37 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42821259/)
+  - 医疗债务这一结构性经济障碍与晚期结直肠癌等发病率升高相关，提示财务毒性可能延迟诊断，为肠癌筛查公平性研究提供新视角。
+- **结直肠手术ERAS依从性预测模型的开发与验证** ｜ World Journal of Surgery · 2026-10 · C 级 · 37 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42817924/)
+  - 基于1119例结直肠手术患者构建ERAS依从性机器学习预测模型，可早期识别低依从风险患者，为个体化围手术期管理提供工具，但需外部验证。
+- **机器人辅助盆腔脏器切除术治疗原发性直肠癌的多中心日本经验** ｜ Annals of Gastroenterological Surgery · 2026-10 · B 级 · 37 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42846623/)
+  - 多中心回顾性研究显示，机器人辅助盆腔脏器切除术在选择性原发性直肠癌患者中围手术期结局可接受，为局部晚期直肠癌的微创化治疗提供了新选择，但开放手术仍是广泛病变的基石。
+- **胃肠道肿瘤术后小肠细菌过度生长：证据与展望** ｜ Annals of Gastroenterological Surgery · 2026-10 · B 级 · 37 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42824673/)
+  - 系统梳理胃肠肿瘤术后SIBO的流行病学、机制、诊断与治疗，提示术后肠道症状可能被低估，为肠癌术后管理提供新视角。
+- **曲氟尿苷替匹嘧啶联合或不联合贝伐珠单抗治疗转移性结直肠癌的真实世界结局：回顾性队列研究** ｜ Anticancer Research · 2026-10 · B 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823158/)
+  - 真实世界证据支持FTD/TPI联合贝伐珠单抗用于难治性mCRC后线治疗，即使既往用过贝伐珠单抗仍可获益，为后线治疗策略提供参考。
+- **加速康复外科在炎症性肠病结直肠手术中的应用：系统综述与Meta分析** ｜ Colorectal Disease : the Official Journal of the Association of Coloproctology of Great Britain and Ireland · 2026-10 · B 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42811387/)
+  - ERAS可使IBD结直肠手术患者住院时间缩短约1.6天且不增加再入院与并发症，提示肠癌ERAS路径可向IBD人群扩展并需手术特异性优化。
+- **PET/MRI对结直肠癌淋巴结转移的诊断效能：真实世界队列研究** ｜ Abdominal Radiology (new York) · 2026-10 · B 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42841921/)
+  - PET/MRI在结直肠癌淋巴结转移评估中显示出高特异度和准确度，支持其作为多模态影像策略用于器官保留决策，但需更大样本验证。
+- **结直肠癌术前减重预康复项目的可接受性与参与体验：CARE随机对照试验嵌套质性研究** ｜ Health Expectations : an International Journal of Public Participation in Health Care and Health Policy · 2026-10 · A 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42841450/)
+  - 术前强化减重预康复对结直肠癌患者总体可接受，但家庭安全顾虑、社交进食和副作用阻碍依从性；提示肠癌围手术期预康复需纳入家庭与社会支持以提升依从性。
+- **单管肛瘘括约肌保留术前是否省略松弛挂线：SETON非劣效随机试验方案** ｜ BMJ Open · 2026-10 · S 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838583/)
+  - 该试验将验证省略常规松弛挂线不劣于传统两阶段手术，有望减少手术次数、患者负担与费用，为肛瘘治疗策略提供高质量证据。
+- **细菌纳米纤维素作为三维结肠癌培养平台：理化表征与生物相容性评价** ｜ Macromolecular Bioscience · 2026-10 · B 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829954/)
+  - 该研究证实细菌纳米纤维素支架可支持结直肠癌细胞三维生长且生物相容性良好，为肠癌体外模型及药物筛选提供了新平台，但尚需进一步验证其模拟肝转移微环境的能力。
+- **基于老年评估分层评估老年转移性结直肠癌患者治疗强度、生活质量与生存的前瞻性观察研究方案** ｜ JMIR Research Protocols · 2026-10 · A 级 · 36 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42855147/)
+  - 该方案以老年评估（GA）驱动的衰弱分层替代单纯年龄/PS，前瞻性关联一线治疗强度、QOL与生存，为老年mCRC个体化决策提供假设生成框架。
+- **老年日本患者胃、结直肠及子宫内膜癌中错配修复缺陷的年龄与性别特异性患病率** ｜ Japanese Journal of Clinical Oncology · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42820669/)
+  - 该研究证实高龄和女性是dMMR的独立预测因素，提示对老年肠癌患者应常规行MSI/MMR检测以筛选免疫治疗获益人群。
+- **机器人辅助直肠癌手术合并持续性降结肠系膜：血管解剖特征与短期结局分析** ｜ Surgery Today · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42836959/)
+  - 持续性降结肠系膜（PDM）与IMA放射状分支及边缘动脉缺损相关，机器人手术可安全应对；提示肠癌术前血管解剖评估对肝转移手术规划亦有参考价值。
+- **组织CEA较血清CEA是结直肠癌更优的独立预后因素：回顾性队列研究** ｜ Neoplasma · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834664/)
+  - 组织CEA表达与血清CEA无显著相关，且为独立于血清CEA的更强预后因子，提示术后病理CEA免疫组化有望纳入肠癌风险分层，并可能影响肝转移随访策略。
+- **垂直腹直肌肌皮瓣降低盆腔廓清术并发症：单中心回顾性队列研究** ｜ ANZ Journal of Surgery · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830230/)
+  - VRAM皮瓣可减少盆腔廓清术后盆腔积液、深部感染及伤口感染，支持其作为局部晚期/复发直肠癌廓清术后的安全重建方式，对改善肠癌扩大手术围手术期管理有参考价值。
+- **结直肠癌造口患者症状系统复杂性与网络评估优先级的现况研究** ｜ Journal of Clinical Nursing · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42829933/)
+  - 症状严重度与症状系统复杂度并不完全等同，熵评估可识别低负担高复杂度的隐匿亚群，为造口患者精准症状管理提供新思路。
+- **术后与术前IL-1β比值升高与结直肠癌不良生存相关** ｜ Journal of Visualized Experiments : Jove · 2026-10 · B 级 · 35 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42825488/)
+  - 首次提出围手术期IL-1β动态变化比值可作为结直肠癌根治术后预后标志物，提示炎症反应动态监测在肠癌预后评估中的潜在价值，但需前瞻性验证。
+- **消费级硬件上本地大模型流水线提取传真病历临床信息** ｜ medRxiv (预印本) · 2026-10-05 ·  级 · 34 分 · [原文](https://doi.org/10.64898/2026.10.03.26364667)
+  - 在单张消费级显卡上以开源权重模型实现传真转诊包的高精度结构化信息提取且零幻觉，为肠癌转诊与随访数据的隐私安全自动化处理提供可行路径。
+- **配对肿瘤-正常靶向测序支持胃肠道间质瘤多原发恶性肿瘤的克隆独立性** ｜ International Journal of Clinical Oncology · 2026-10 · B 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823566/)
+  - GIST患者多原发恶性肿瘤发生率高达27.5%，配对测序证实其与GIST克隆独立起源，提示GIST患者（尤其高龄）需按年龄进行包括肠癌在内的多癌种筛查。
+- **基于YOLOv3框架与黏液帽特征增强的结肠镜无蒂锯齿状病变深度学习检测** ｜ Journal of Gastroenterology and Hepatology · 2026-10 · C 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844151/)
+  - 该研究通过整合黏液帽特征优化YOLOv3框架，显著提升结肠镜下无蒂锯齿状病变的检出率，为结直肠癌前病变的AI辅助筛查提供了可推广的技术路径。
+- **[68Ga]Ga-FAPI-46 PET/CT在肿瘤真实世界临床中的增益价值** ｜ The Quarterly Journal of Nuclear Medicine and Molecular Imaging : Official Publication of the Italian Association of Nuclear Medicine (AIMN) [and] the International Association of Radiopharmacology (IAR), [and] Section of the Society Of... · 2026-10 · B 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839802/)
+  - 真实世界数据显示FAPI-PET/CT在常规影像难以定夺时额外发现率达64%、改变治疗决策达45%，提示其在肠癌及肝转移病灶探查与分期中具有潜在增益价值。
+- **FRMD6表达可预测结直肠癌腹膜转移患者CRS/HIPEC后的复发** ｜ Biomarkers : Biochemical Indicators of Exposure, Response, and Susceptibility to Chemicals · 2026-10 · B 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837610/)
+  - 首次在CRS/HIPEC治疗的结直肠癌腹膜转移患者中验证FRMD6的预后价值，提示其可作为术前风险分层标志物，指导个体化治疗决策。
+- **肥胖与结肠癌肿瘤侵袭性病理特征及淋巴结分期：多中心倾向性评分匹配研究** ｜ Updates in Surgery · 2026-10 · B 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837080/)
+  - 肥胖未影响淋巴结分期质量，但与神经周围侵犯和肿瘤沉积独立相关，提示肥胖相关结肠癌可能具有独特侵袭性生物学行为，值得在肝转移风险分层中进一步验证。
+- **机器人辅助与开放低位前切除TME术后生活质量及功能结局的倾向评分匹配比较** ｜ Langenbeck's Archives of Surgery · 2026-10 · B 级 · 34 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42836881/)
+  - 机器人辅助与开放TME术后生活质量和肛门功能总体相当，但两组约三分之一患者存在重度LARS，提示功能负担持续存在，术式选择需重视功能保护。
+- **巴基斯坦基层医疗机构糖尿病整合照护的经济学评价：一项实用性随机对照试验** ｜ medRxiv (预印本) · 2026-10-07 ·  级 · 33 分 · [原文](https://doi.org/10.64898/2026.10.06.26364849)
+  - 该研究为基层糖尿病标准化照护包的成本效果提供经济学证据，方法学可借鉴于肠癌肝转移综合管理模式的卫生经济学评价。
+- **美国成人粮食不安全与胃肠及肝脏疾病的关联：一项基于人群的研究** ｜ Nutrition and Health · 2026-10 · B 级 · 33 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42847277/)
+  - 粮食不安全与IBD、肝炎及消化道肿瘤显著相关，且该人群肠癌筛查率极低，提示肠癌防控需关注社会经济弱势群体的筛查干预。
+- **混合与常规内镜黏膜下剥离术治疗非壶腹部十二指肠黏膜下肿瘤的疗效与安全性比较** ｜ Surgical Endoscopy · 2026-10 · B 级 · 33 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834185/)
+  - 该研究提示混合ESD可缩短非壶腹部十二指肠黏膜下肿瘤手术时间且不增加不良事件，为肠癌相关内镜治疗策略提供参考，但与肝转移直接关联有限。
+- **石榴皮果胶寡糖的微生物酶解制备及其选择性抗肿瘤活性研究** ｜ World Journal of Microbiology & Biotechnology · 2026-10 · B 级 · 32 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42821154/)
+  - 该研究通过微生物酶解石榴皮果胶制备果胶寡糖，体外及分子对接显示其对结直肠癌Caco-2细胞有选择性抑制作用，为肠癌化学预防提供了新型功能性食品候选物，但尚需体内验证。
+- **晚期结直肠癌肠道菌群特征及机器学习候选标志物筛选** ｜ Archives of Microbiology · 2026-10 · B 级 · 32 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42821103/)
+  - 单中心小样本揭示晚期CRC菌群失调及SCFA产生菌耗竭，机器学习模型内部可重复但缺乏外部验证，尚不足以指导临床决策。
+- **新型水杨醛-磺酰胺席夫碱诱导ISR转录组反应并抑制肿瘤细胞存活** ｜ Bioorganic Chemistry · 2026-10 · B 级 · 32 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42837737/)
+  - 该研究报道新型席夫碱先导化合物C5具广谱抗肿瘤活性并激活整合应激反应，为肠癌及肝转移的应激通路靶向治疗提供了新化学骨架与转录组依据。
+- **阿拉斯加原住民结直肠癌筛查未完成原因：干预试验随访调查** ｜ Journal of the National Cancer Institute. Monographs · 2026-10 · A 级 · 32 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830454/)
+  - 首次揭示阿拉斯加原住民在同意筛查后未完成的原因，多为可干预的系统障碍，提示优化流程可提高筛查依从性。
+- **大鼠结肠POMC-β-内啡肽系统：应激上调及其与应激诱导内脏镇痛的关联** ｜ Neurogastroenterology and Motility · 2026-10 · B 级 · 31 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834548/)
+  - 该研究揭示结肠局部POMC-β-内啡肽系统受CRF/应激调控并与内脏镇痛相关，为肠癌患者应激相关内脏痛及肝转移疼痛管理提供潜在靶点。
+- **本科护生作为患者导航员嵌入联邦合格健康中心提升结直肠癌筛查** ｜ The Journal of Nursing Education · 2026-10 · A 级 · 31 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42832440/)
+  - 护生主导的患者导航模式可行且具教育价值，能改善肠癌筛查流程，为资源匮乏地区提升筛查依从性提供可推广路径。
+- **牙周病原体对结直肠癌细胞代谢基因表达的影响** ｜ Journal of Taibah University Medical Sciences · 2026-10 · B 级 · 31 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830770/)
+  - 揭示牙周病原体可差异性调控肠癌细胞代谢基因，提示微生物-代谢互作可能影响肠癌进展，为肝转移微生态研究提供新线索。
+- **直肠癌患者盆腔内脏神经与腹下神经的磁共振神经成像可视化研究** ｜ Surgery Today · 2026-10 · C 级 · 31 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42853291/)
+  - MRN对盆腔内脏神经显示率高、腹下神经显示率低，且受内脏脂肪面积影响，为直肠癌手术神经保护提供影像学依据。
+- **结直肠癌淋巴结外侵犯与淋巴结负荷及疾病复发的关联研究** ｜ International Journal of Surgical Pathology · 2026-10 · B 级 · 31 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42852861/)
+  - 淋巴结外侵犯与更高淋巴结转移负荷、N分期及远处转移相关，提示其或应纳入肠癌分期与复发风险分层，对肝转移高危人群筛选有参考价值。
+- **未先行直肠灌肠直接行顺行控便灌肠术的一年结局：多中心儿童结直肠研究** ｜ Journal of Pediatric Surgery · 2026-10 · B 级 · 30 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849783/)
+  - 多中心数据支持跳过直肠灌肠试验直接行ACE通道，一年并发症低且90%仍在使用，提示肠癌/肝转移术后肠道管理可借鉴该分层策略。
+- **结肠癌术后延长住院时间的预测因素：一项回顾性观察研究** ｜ Cirugia Espanola · 2026-10 · B 级 · 30 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849721/)
+  - 该研究提示开腹手术及中转开腹是结肠癌术后延长住院的独立预测因素，为围手术期风险分层与ERAS推广提供了依据，但对肝转移特异性关注有限。
+- **N-苯甲酰EF24类似物的合成及其抗结直肠癌活性研究** ｜ Future Medicinal Chemistry · 2026-10 · B 级 · 30 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42830631/)
+  - 本研究合成新型EF24姜黄素衍生物并发现先导化合物10具强抗结直肠癌活性，为肠癌化疗提供新候选分子，但尚处体外阶段。
+- **加州职业消防员癌症筛查依从性及其个体与职业相关因素分析** ｜ Cancer Epidemiology, Biomarkers & Prevention : a Publication of the American Association for Cancer Research, Cosponsored By the American Society of Preventive Oncology · 2026-10 · B 级 · 29 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42847818/)
+  - 首次系统刻画职业消防员多癌种筛查依从性，结直肠癌筛查率仅54%-68%；提示高危职业人群需针对性干预以缩小筛查缺口。
+- **疾病感知对癌症创伤后应激症状的预测作用：纵向研究** ｜ Journal of Health Psychology · 2026-10 · A 级 · 29 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844886/)
+  - 揭示癌症幸存者疾病感知可预测创伤后应激症状，提示肠癌及肝转移患者心理干预应关注认知评估，但非肿瘤特异性研究。
+- **年轻缺铁性贫血女性双向内镜检查后胃肠道诊断编码的多中心研究** ｜ Digestive Diseases and Sciences · 2026-10 · B 级 · 29 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842164/)
+  - 该研究描述了18-44岁无报警症状缺铁性贫血女性双向内镜后的编码诊断谱，提示上消化道病变常见而恶性肿瘤罕见，为选择性内镜策略提供了依据，但缺乏对照无法确立内镜获益。
+- **结直肠癌患者生活质量与心理困扰的潜在剖面分析：一项横断面研究** ｜ Current Medical Research and Opinion · 2026-10 · B 级 · 29 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42831906/)
+  - 通过潜在剖面分析识别出结直肠癌患者四种生活质量-心理困扰亚型，提示临床可据此实施分层心理干预，但需前瞻性验证。
+- **埃及癌症患者隐孢子虫感染流行病学及虫种分布的病例对照研究** ｜ Acta Tropica · 2026-10 · B 级 · 28 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42822657/)
+  - 癌症患者隐孢子虫感染率显著高于免疫正常人群，且虫种分布与肿瘤类型相关，提示肠癌及肝转移患者或需纳入靶向寄生虫筛查。
+- **西班牙结直肠手术中术中内镜应用现状：全国性调查研究** ｜ Cirugia Espanola · 2026-10 · C 级 · 28 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849723/)
+  - 西班牙全国调查显示术中内镜虽被高度认可，但常规使用率仅36.1%，培训与设备不足制约其推广；提示需通过规范化培训与资源整合提升吻合口安全，对肠癌手术质量改进有参考价值。
+- **日本地区消化内镜专科医师分布与结直肠癌死亡率呈负相关：一项生态学分析** ｜ JGH Open : an Open Access Journal of Gastroenterology and Hepatology · 2026-10 · B 级 · 28 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42828085/)
+  - 地区消化内镜专科医师密度越高，结直肠癌死亡率越低，提示内镜医师资源分布不均可能是肠癌防控差异的重要因素，对优化筛查资源配置具有政策启示。
+- **非结直肠癌病史患者mt-sDNA阳性但结肠镜无进展期肿瘤后的远期恶性肿瘤发生率** ｜ Digestive Diseases and Sciences · 2026-10 · B 级 · 27 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42836935/)
+  - 在既往非结直肠癌患者中，mt-sDNA阳性而结肠镜阴性者约1/5后续发生新发或复发恶性肿瘤，多位于气消化道，提示阳性结果或反映肠外肿瘤信号，但尚不足以改变现有监测策略。
+- **GLIM营养不良标准对结直肠癌和/或肺癌门诊患者预后的预测价值：一项前瞻性观察研究** ｜ Nutrition (burbank, Los Angeles County, Calif.) · 2026-10 · A 级 · 27 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42854379/)
+  - GLIM不同组合对门诊肿瘤患者营养不良诊断率及预后预测差异显著，含表型标准与摄入减少的组合预测12个月死亡风险最佳，提示应标准化GLIM组合以优化肠癌患者营养评估与临床决策。
+- **双吻合器腔内吻合用于微创左右半结肠切除术的标准化技术** ｜ Surgical Endoscopy · 2026-10 · C 级 · 26 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823546/)
+  - 提出全吻合器腔内吻合标准化术式，免除腔内手工缝合，降低技术门槛，利于机器人及腹腔镜推广教学，但尚需临床结局验证。
+- **β-氯氰菊酯与氨基甲酸乙酯共暴露对Caco-2细胞的细胞毒性及机制研究** ｜ Journal of Food Science · 2026-10 · B 级 · 26 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42842389/)
+  - 该体外机制研究提示农药与食品污染物联合暴露可加性损伤肠上皮细胞，为肠癌环境暴露病因学提供线索，但与肝转移及临床实践关联甚远。
+- **透视引导下结直肠支架置入治疗远端恶性梗阻的单中心回顾性研究** ｜ Diagnostic and Interventional Radiology (ankara, Turkey) · 2026-10 · B 级 · 26 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42834613/)
+  - 透视引导SEMS置入在远端恶性结直肠梗阻中技术成功率高、早期临床有效，为介入放射科主导的多学科减压路径提供可行选择，对肠癌梗阻及后续肝转移治疗衔接有参考价值。
+- **结直肠癌经卵圆孔未闭致脑肿瘤栓塞：机械取栓确诊一例** ｜ Internal Medicine (tokyo, Japan) · 2026-10 · C 级 · 25 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42844190/)
+  - 揭示结直肠癌可经卵圆孔未闭形成脑肿瘤栓塞这一罕见转移途径，提示对无肝肺转移的脑栓塞患者应警惕肠癌来源及右向左分流。
+- **1,3-硒唑-2-胺衍生物的合成、细胞毒活性及ADMET计算分析** ｜ Chemistryopen · 2026-10 · B 级 · 24 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42823835/)
+  - 本研究报道新型硒唑类化合物的合成及其对结肠癌HT-29细胞的弱细胞毒活性，提示硒唑骨架可作为肠癌药物研发的潜在先导结构，但尚需机制与体内验证。
+- **斯里兰卡中低收入人群结肠镜筛查可及性、可负担性与意愿的横断面研究** ｜ Asia-pacific Journal of Clinical Oncology · 2026-10 · B 级 · 24 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42850897/)
+  - 在无国家筛查规划的中低收入国家，结肠镜筛查意愿虽高但近半数取决于免费，提示肠癌筛查落地需优先解决可负担性与认知误区。
+- **共享决策及其辅助工具在结直肠癌外科中的应用：叙述性综述** ｜ Cirugia Espanola · 2026-10 · B 级 · 22 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42849718/)
+  - 共享决策与患者决策辅助工具可改善结直肠癌外科沟通与决策质量，提示应将PtDA整合入肠癌（含肝转移）外科临床路径。
+- **患者对腹腔镜手术视频分析及手术室技术的看法：一项质性研究** ｜ Journal of Surgical Education · 2026-10 · C 级 · 22 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42843282/)
+  - 患者支持腹腔镜结直肠癌手术视频用于教育与研究，但强调知情同意、隐私保护与外科医生偏倚等伦理问题，为肠癌手术数字化研究提供患者视角。
+- **新型托美汀腙类化合物的设计、合成及抗结肠癌体外筛选** ｜ Bioorganic & Medicinal Chemistry Letters · 2026-10 · B 级 · 22 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42826819/)
+  - 该研究设计合成20个托美汀腙衍生物并初步体外筛选抗结肠癌活性，为NSAID类老药结构改造提供新思路，但尚处细胞层面，距肝转移临床转化较远。
+- **乙状结肠腺癌术后获得性血友病A：个案报告与文献综述** ｜ Asia-pacific Journal of Clinical Oncology · 2026-10 · C 级 · 21 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42839549/)
+  - 肠癌可诱发获得性血友病A，术后不明原因出血需警惕FVIII抑制物，提示肿瘤相关自身免疫并发症的识别与免疫抑制治疗平衡。
+- **Muir-Torre综合征相关晚期十二指肠癌的多学科治疗个案** ｜ Clinical Journal of Gastroenterology · 2026-10 · C 级 · 21 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42832013/)
+  - MTS作为Lynch综合征表型变异，可累及十二指肠；化疗转化后R0切除联合免疫治疗有效，提示肠癌谱系需扩展MMR筛查与监测。
+- **产气荚膜梭菌主动脉炎及纵隔炎并发穿孔性阑尾炎：一例慢性粒单核细胞白血病患者的病例报告** ｜ Journal of Infection and Chemotherapy : Official Journal of the Japan Society of Chemotherapy · 2026-10 · C 级 · 19 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42838282/)
+  - 产气荚膜梭菌主动脉炎可源于穿孔性阑尾炎而非结直肠肿瘤，提示免疫抑制患者阑尾炎非手术管理可能源控制不足，分期杂交手术可挽救生命。
+- **肿块型克罗恩病模拟结肠癌的多发结肠肿块一例报告** ｜ Clinical Case Reports · 2026-10 · C 级 · 17 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42835293/)
+  - 肿块型克罗恩病可在内镜及影像上模拟结肠癌，提示肠癌鉴别诊断中需重视组织病理，避免误诊误治。
+- **遗传性血色病静脉放血需求减少提示隐匿性结直肠癌** ｜ BMJ Case Reports · 2026-10 · C 级 · 16 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42833850/)
+  - 该个案提示遗传性血色病静脉放血需求意外减少可能是隐匿性结直肠癌的早期线索，为肠癌筛查提供了新的临床警示信号。
+- **戈沙妥珠单抗在三重原发癌（三阴性乳腺癌、结肠癌、肺癌）中的治疗成功：一例病例报告** ｜ Recenti Progressi in Medicina · 2026-10 · C 级 · 15 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42831722/)
+  - 该个案显示ADC药物在三重原发癌中的持久获益，提示肠癌合并其他原发肿瘤时多学科决策与ADC应用可能带来生存获益，但证据级别低。
+- **性病性淋巴肉芽肿表现为巨大直肠溃疡伴腹股沟淋巴结炎：一例病例报告** ｜ Journal of Surgical Case Reports · 2026-10 · C 级 · 13 分 · [原文](https://pubmed.ncbi.nlm.nih.gov/42846546/)
+  - 直肠巨大溃疡伴淋巴结肿大可酷似直肠癌，提示肠癌鉴别诊断需纳入感染性病因，避免误诊误治。
+
+## 临床试验动态（152 项）
+
+- NCT07261631 ｜ [177Lu]Lu-DFC413治疗实体瘤患者的I期研究 ｜ I 期 ｜ 招募中
+- NCT05994482 ｜ 老年人监测性结肠镜检查：SurvOlderAdults研究 ｜ 观察性 ｜ 进行中·不再招募
+- NCT06821009 ｜ 基于云的数字健康导航项目用于结直肠癌筛查的有效性 ｜ N/A ｜ 进行中·不再招募
+- NCT07023289 ｜ 评估静脉输注Telisotuzumab Adizutecan单药或联合标准治疗在辅助治疗后循环肿瘤DNA阳性且无影像学证据的结直肠癌成人参与者中的不良事件和疾病活动变化的研究 ｜ II 期 ｜ 招募中
+- NCT07284849 ｜ A Study to Evaluate the Efficacy and Safety of Standard-of-Care Chemotherapy and Bevacizumab With or Without INCA33890 in the First-Line Treatment of Metastatic Microsatellite Stable Colorectal Cancer ｜ III 期 ｜ 招募中
+- NCT04929223 ｜ A Study Evaluating the Safety and Efficacy of Targeted Therapies in Subpopulations of Patients With Metastatic Colorectal Cancer (INTRINSIC) ｜ I 期 ｜ 招募中
+- NCT03551951 ｜ Tumor Cell and DNA Detection in the Blood, Urine, and Bone Marrow ｜ 观察性 ｜ 招募中
+- NCT05571293 ｜ Combination Immunotherapy in Colorectal Cancer ｜ II 期 ｜ 已完成
+- NCT04927897 ｜ DETECT: Target Volume for Rectal Endoluminal Radiation Boosting ｜ 观察性 ｜ 招募中
+- NCT07501845 ｜ Registry Maastro Applicator ｜ 观察性 ｜ 招募中
+- NCT05556473 ｜ F-Tryptophan PET/CT in Human Cancers ｜ I 期 ｜ 已完成
+- NCT06269978 ｜ Intraperitoneal Oxaliplatin and Fluorouracil for the Treatment of Patients With Peritoneal Metastases From Colorectal Cancer ｜ I 期 ｜ 进行中·不再招募
+- NCT05914766 ｜ An Informational and Supportive Care Intervention for Patients With Locally Advanced Rectal Cancer ｜ N/A ｜ 招募中
+- NCT07775287 ｜ Study of Petosemtamab Plus Chemotherapy Versus Cetuximab or Bevacizumab Plus Chemotherapy in RAS and BRAF Wild Type, Recurrent, Unresectable or Metastatic Colorectal Cancer (LiGeR-CRC2) ｜ III 期 ｜ 招募中
+- NCT04256707 ｜ Relative Bioavailability/Bioequivalence of Different Formulations of Selinexor, the Impact of Hepatic Impairment on Selinexor Pharmacokinetics, Tolerability and Antitumor Activity of Selinexor Combination Treatment ｜ I 期 / II 期 ｜ 已完成
+- NCT07429110 ｜ ColoSeal™ ICD System Anastomotic Protection Pivotal Study ｜ N/A ｜ 进行中·不再招募
+- NCT06600295 ｜ Oncology, Undernutrition and Sensoriality: Links, Mechanisms and Levers for Action ｜ 观察性 ｜ 招募中
+- NCT03168737 ｜ 18F-Fluoroazomycin Arabinoside PET-CT in Diagnosing Solid Tumors in Patients ｜ I 期 ｜ 进行中·不再招募
+- NCT00001823 ｜ Evaluation for NCI Surgery Branch Clinical Research Protocols ｜ 观察性 ｜ 招募中
+- NCT07549412 ｜ A Study of Precemtabart Tocentecan With or Without Bevacizumab Compared to Trifluridine/Tipiracil Plus Bevacizumab in Participants With Previously Treated Metastatic Colorectal Cancer (PROCEADE-CRC-03) ｜ III 期 ｜ 招募中
+- NCT07668284 ｜ COQ10 and Vitamin E for Off-Target Radiation Toxicity ｜ I 期 / II 期 ｜ 尚未招募
+- NCT04847063 ｜ Individual Response to Hyperthermic Intraperitoneal Chemotherapy (HIPEC) Treatment of Peritoneal Carcinomatosis From Peritoneal Mesothelioma or Atypical Mesothelial Proliferation or From Ovarian, Colorectal, or Appendiceal Histologies ｜ I 期 ｜ 招募中
+- NCT07371832 ｜ A Single Center Evaluation of AI Enabled SureForm Robotic Stapler (SureformTM) Compared to Conventional Stapler for Colorectal Cancer Procedures ｜ 观察性 ｜ 招募中
+- NCT03872947 ｜ A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors ｜ I 期 ｜ 已完成
+- NCT03796884 ｜ Linaclotide in Treating Patients With Stages 0-3 Colorectal Cancer ｜ II 期 ｜ 进行中·不再招募
+- NCT01174121 ｜ Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Cancer ｜ II 期 ｜ 招募中
+- NCT06726642 ｜ CfDNA in Hereditary And High-risk Malignancies 2 ｜ 观察性 ｜ 招募中
+- NCT05988645 ｜ Performance and Safety of MiWEndo-assisted Colonoscopy (MiWEndo II) ｜ N/A ｜ 招募中
+- NCT07545122 ｜ A Phase 1a/1b, First-Time-in-Human Study of CT-202, a Nectin-4 Directed Bispecific Antibody, in Participants With Recurring Triple Negative Breast, Colorectal, Urothelial Cancers ｜ I 期 ｜ 招募中
+- NCT02032953 ｜ Enhancing the Anabolic Effect of Perioperative Nutrition With Insulin While Maintaining Normoglycemia ｜ IV 期 ｜ 已撤回
+- NCT04486378 ｜ RO7198457对比观察等待治疗ctDNA阳性、已切除II期（高危）和III期结直肠癌患者的II期临床试验 ｜ II 期 ｜ 进行中·不再招募
+- NCT03975491 ｜ 运动与结直肠癌治疗试验 ｜ N/A ｜ 已完成
+- NCT07114601 ｜ LY4257496治疗癌症参与者的研究（OMNIRAY） ｜ I 期 ｜ 招募中
+- NCT02298959 ｜ Testing the PD-1 Antibody, MK3475, Given With Ziv-aflibercept in Patients With Advanced Cancer ｜ I 期 ｜ 进行中·不再招募
+- NCT05130060 ｜ A Vaccine (PolyPEPI1018 Vaccine) and TAS-102 for the Treatment of Metastatic Colorectal Cancer ｜ I 期 ｜ 已完成
+- NCT02863172 ｜ Molecular Basis for Variations in Hereditary Colorectal Cancer Syndromes ｜ 观察性 ｜ 招募中
+- NCT06540261 ｜ The Study of ONO-7913, ONO-4538 and the Standard of Care as First-line Treatment in Patients Colorectal Cancer ｜ I 期 ｜ 进行中·不再招募
+- NCT07863024 ｜ Safety and Efficacy Study in Adults With Advanced Solid Tumors Receiving REGN13089-M404-M2980, an Antibody-drug Conjugate That Targets MET Protein on Tumors ｜ I 期 / II 期 ｜ 尚未招募
+- NCT06710756 ｜ Lead-212 PSV359 Therapy for Patients With Solid Tumors ｜ I 期 / II 期 ｜ 招募中
+- NCT07701408 ｜ ctDNA and TEP Levels in Colon Cancer ｜ N/A ｜ 尚未招募
+- NCT06493019 ｜ Study of Pembrolizumab, Carboplatin, Paclitaxel, and Radiation for the Treatment of Early-Stage Anal Cancer ｜ II 期 ｜ 招募中
+- NCT05919264 ｜ FOG-001 in Locally Advanced or Metastatic Solid Tumors ｜ I 期 / II 期 ｜ 招募中
+- NCT06833866 ｜ Phase I Trial of 5-Fluorouracil (5FU) -Based Therapy in Combination With Hydroxytyrosol (HT) in Patients With Advanced or Metastatic Colorectal Cancer ｜ I 期 ｜ 招募中
+- NCT03998202 ｜ Myopenia and Mechanisms of Chemotherapy Toxicity in Older Adults With Colorectal Cancer ｜ 观察性 ｜ 招募中
+- NCT06400472 ｜ A Study of Sofe-M in Participants With Selected Advanced Solid Tumors ｜ I 期 ｜ 招募中
+- NCT06418204 ｜ Assessing Benefits and Harms of Cannabis/Cannabinoid Use Among Cancer Patients Treated in Community Oncology Clinics ｜ 观察性 ｜ 招募中
+- NCT07863869 ｜ The QL1706 Combined With Chemotherapy and Either Cetuximab or Bevacizumab in Potentially Resectable Colorectal Cancer Patients With Liver Metastases ｜ I 期 / II 期 ｜ 尚未招募
+- NCT03141437 ｜ Decision Aid Website in Helping to Make Decisions About Fertility in Participants With Cancer ｜ N/A ｜ 进行中·不再招募
+- NCT06887218 ｜ 5-Fluorouracil/Leucovorin (5FU/LV) in Combination With Regorafenib in Patients With Metastatic Colorectal Cancer ｜ II 期 ｜ 招募中
+- NCT03805919 ｜ Men at High Genetic Risk for Prostate Cancer ｜ 观察性 ｜ 招募中
+- NCT04430725 ｜ Microwave Ablation or Wedge Resection for the Treatment of Lung, Sarcoma and Colorectal Lesions, ALLUME Study ｜ 观察性 ｜ 进行中·不再招募
+- NCT07863154 ｜ Probiotic Supplementation During Neoadjuvant Chemoradiotherapy in Colorectal Cancer ｜ N/A ｜ 已完成
+- NCT05630794 ｜ Testing for Safety and Colorectal Cancer Preventive Effects of ONC201 ｜ I 期 ｜ 招募中
+- NCT06526819 ｜ SMP-3124LP in Adults With Advanced Solid Tumors ｜ I 期 / II 期 ｜ 招募中
+- NCT02863107 ｜ Young-Onset Colorectal Cancer ｜ 观察性 ｜ 进行中·不再招募
+- NCT06885697 ｜ 抗间皮素TNaive/SCM hYP218（TNhYP218）CAR-T细胞治疗间皮素表达实体瘤（包括间皮瘤）患者 ｜ I 期 ｜ 招募中
+- NCT07861386 ｜ 利用专科肿瘤电子健康记录数据库模拟MAVERICC试验 ｜ 观察性 ｜ 进行中·不再招募
+- NCT04125914 ｜ 体重管理与健康行为干预降低BRCA阳性及Lynch综合征家族癌症风险 ｜ N/A ｜ 进行中·不再招募
+- NCT06995898 ｜ Vanguard研究：测试一种新的癌症筛查方法 ｜ N/A ｜ 招募中
+- NCT07416552 ｜ CEA-PRIT 2.0治疗转移性结直肠癌（mCRC）患者的研究 ｜ I 期 ｜ 招募中
+- NCT06569368 ｜ 甲硝唑优化接受新辅助治疗的直肠腺癌微生物组的试验 ｜ II 期 ｜ 招募中
+- NCT06424522 ｜ 肠道管理方案（逆行直肠灌肠）治疗直肠癌患者低位前切除综合征 ｜ N/A ｜ 招募中
+- NCT07403981 ｜ 倡导、合作、外展及优化肿瘤患者护理 ｜ N/A ｜ 招募中
+- NCT07861360 ｜ Emulation of the SUNLIGHT Trial Using Specialty Oncology Electronic Health Records Databases ｜ 观察性 ｜ 进行中·不再招募
+- NCT02843425 ｜ The Beans to Enrich the Gut Microbiome vs. Obesity's Negative Effects (BE GONE) Trial ｜ N/A ｜ 进行中·不再招募
+- NCT02842203 ｜ Use of ctDNA for Monitoring of Stage III Colorectal Cancer ｜ 观察性 ｜ 进行中·不再招募
+- NCT04429542 ｜ Study of Safety and Tolerability of BCA101 Monotherapy and in Combination Therapy in Patients With EGFR-driven Advanced Solid Tumors ｜ I 期 ｜ 招募中
+- NCT07228832 ｜ Phase III Study of Ivonescimab or Bevacizumab Combined With FOLFOX in Patients With Metastatic Colorectal Cancer ｜ III 期 ｜ 招募中
+- NCT05482516 ｜ Evaluating Novel Therapies in ctDNA Positive GI Cancers ｜ III 期 ｜ 进行中·不再招募
+- NCT04465214 ｜ Mobile Sensor Technologies to Assess General Symptomology of People With Cancer ｜ 观察性 ｜ 已完成
+- NCT07861347 ｜ Emulation of the KEYNOTE177 Trial Using Specialty Oncology Electronic Health Records Databases ｜ 观察性 ｜ 进行中·不再招募
+- NCT07861815 ｜ Assessing the Feasibility of Using Methylene Blue in Identifying Ureters During Colorectal Surgery ｜ IV 期 ｜ 尚未招募
+- NCT05639972 ｜ E7 T-cell Receptor (TCR) -T Cell Induction Therapy for Locoregionally Advanced HPV-associated Cancers ｜ I 期 / II 期 ｜ 招募中
+- NCT07237438 ｜ TIVA Versus Balanced Anesthesia on Muscle Mass in CRC Surgery ｜ N/A ｜ 已完成
+- NCT07702032 ｜ Study of Petosemtamab Plus Chemotherapy Versus Cetuximab Plus Chemotherapy in RAS and BRAF Wild-type, Unresectable or Metastatic, Left-sided Colorectal Cancer (LiGeR-CRC1) ｜ III 期 ｜ 招募中
+- NCT05195970 ｜ 核桃与结肠健康（WellNut试验） ｜ N/A ｜ 已完成
+- NCT05708950 ｜ KVA12123 [TBS-2025]单药及联合帕博利珠单抗治疗晚期实体瘤的临床试验（VISTA-101） ｜ I 期 / II 期 ｜ 已完成
+- NCT06343116 ｜ 尼妥珠单抗联合曲氟尿苷/替匹嘧啶治疗难治性转移性结直肠癌 ｜ III 期 ｜ 已撤回
+- NCT05693649 ｜ 基于行为经济学的群体结直肠癌筛查方法 ｜ N/A ｜ 进行中·不再招募
+- NCT04616183 ｜ LY3214996与西妥昔单抗单用或联合阿贝西利治疗不可切除或转移性结直肠癌 ｜ I 期 / II 期 ｜ 进行中·不再招募
+- NCT03851614 ｜ DNA损伤、血管生成及PD-L1抑制剂在晚期实体瘤中的研究 ｜ II 期 ｜ 进行中·不再招募
+- NCT07454642 ｜ AVA6103治疗局部晚期或转移性特定实体瘤受试者的研究 ｜ I 期 ｜ 招募中
+- NCT05254327 ｜ 短程与长程放疗联合/不联合BMX-001的疗效与安全性试验 ｜ II 期 ｜ 招募中
+- NCT07612007 ｜ HRX215，第一代MKK4抑制剂药物，用于门静脉栓塞后结直肠肝转移患者的治疗 ｜ II 期 ｜ 尚未招募
+- NCT07544589 ｜ DISP-10治疗晚期胃肠道癌症参与者的1期研究 ｜ I 期 ｜ 招募中
+- NCT06037954 ｜ A Study of Mental Health Care in People With Cancer ｜ N/A ｜ 招募中
+- NCT06449989 ｜ Comparison of Molecular-Genetic Concordance of the Primary Tumor and Brain Metastases of Colorectal Cancer ｜ 观察性 ｜ 招募中
+- NCT05056077 ｜ Improving Nutrition and Physical Activity for Cancer Survivors (Tools To Be Fit) ｜ N/A ｜ 进行中·不再招募
+- NCT07859085 ｜ A Study to Evaluate the Safety and Activity of GDC-7035 With Anti-Cancer Therapies in Participants With KRAS G12D-Mutated Unresectable Advanced or Metastatic Colorectal Cancer or Pancreatic Ductal Adenocarcinoma ｜ I 期 ｜ 尚未招募
+- NCT07411599 ｜ Dual Administration Of Intraperitoneal And Intravenous TROP2-Directed CAR-NK With TGF-Beta Receptor 2 (TGFBR2) Knock Out (KO) Therapy For Colorectal Cancer-Related Peritoneal Carcinomatosis: A Phase 1/2 Trial ("Chip-CRC Trial") ｜ I 期 / II 期 ｜ 招募中
+- NCT07535112 ｜ A Study to Learn More About How Safe BAY 3771249 is and How Well it Works in People With Advanced or Metastatic Colorectal Cancer That Has a KRAS G12D Mutation ｜ I 期 ｜ 招募中
+- NCT07595276 ｜ Comparing Efficacy and Safety of Enlituo® Versus Erbitux® Plus FOLFOX in Locally Advanced/Metastatic Colorectal Cancer With RAS/BRAF Wild-type and MSS/pMMR Status. ｜ III 期 ｜ 招募中
+- NCT07856914 ｜ Paricalcitol Versus Pirfenidone for Improving Surgical Resectability in Patients With Peritoneal Cancer ｜ II 期 ｜ 尚未招募
+- NCT07259304 ｜ Social Health, Activity Behaviors, and Quality of Life Among Young Adult Cancer Survivors ｜ 观察性 ｜ 进行中·不再招募
+- NCT06130826 ｜ Immune Response Activation for the Treatment of Unresectable Metastatic Colorectal Cancer or CEA Positive Metastatic Breast Cancer ｜ I 期 ｜ 进行中·不再招募
+- NCT07858201 ｜ Epidemiology of Anal Human Papillomavirus Carriage in Female Solid Organ Transplant Recipients With More Than 10 Years of Immunosuppression ｜ N/A ｜ 尚未招募
+- NCT04314401 ｜ National Cancer Institute "Cancer Moonshot Biobank" ｜ 观察性 ｜ 进行中·不再招募
+- NCT06399757 ｜ A Study to Investigate APL-5125 in Adults With Advanced Solid Tumors ｜ I 期 ｜ 已完成
+- NCT04929028 ｜ Therapy Adapted for High Risk and Low Risk HIV-Associated Anal Cancer ｜ II 期 ｜ 进行中·不再招募
+- NCT04313114 ｜ The PRIME-CRC Trial to Promote CRC Screening in Rural Communities ｜ N/A ｜ 进行中·不再招募
+- NCT07857317 ｜ Non-Contrast Versus Contrast-Enhanced MRI in Colorectal Liver Metastases ｜ 观察性 ｜ 尚未招募
+- NCT00339495 ｜ 前列腺、肺、结直肠和卵巢（PLCO）癌症筛查试验 ｜ 观察性 ｜ 进行中·不再招募
+- NCT06593678 ｜ 癌症患者远程康复：结直肠切除术后预康复与康复的优化 ｜ N/A ｜ 已完成
+- NCT07143487 ｜ 基因检测后的家庭沟通 ｜ N/A ｜ 招募中
+- NCT01329809 ｜ 新辅助重组痘苗病毒联合肝切除治疗转移性结直肠癌 ｜ II 期 ｜ 终止
+- NCT04331535 ｜ VA基因组医学研究 ｜ N/A ｜ 进行中·不再招募
+- NCT04495088 ｜ Preoperative FOLFOX Versus Postoperative Risk-adapted Chemotherapy in Patients With Locally Advanced Rectal Cancer ｜ III 期 ｜ 终止
+- NCT07140679 ｜ Immunotherapy (Toripalimab) for Reducing Recurrence Risk After Surgery for Mismatch Repair Deficient Stage IIB, IIC, or III Colon Cancer ｜ II 期 ｜ 招募中
+- NCT07188025 ｜ ctDNA-Based Adjuvant Chemotherapy for High-Risk Rectal Cancer ｜ III 期 ｜ 招募中
+- NCT07071454 ｜ Preventing Early-Onset Colorectal Cancer in the VA ｜ N/A ｜ 尚未招募
+- NCT07854405 ｜ A Clinical Study on the Synergistic Effects of Zhen-Qi-Jie-Du Granules in Palliative Care for Advanced Colorectal Cancer ｜ N/A ｜ 尚未招募
+- NCT06760819 ｜ A Study to Learn More About How Well Treatment With Sevabertinib (BAY 2927088) Tablets Works and How Safe it is in Participants Who Have a Solid Tumor With Mutations of the Human Epidermal Growth Factor Receptor 2 (HER2) ｜ II 期 ｜ 招募中
+- NCT06265285 ｜ Comparison of In-Home Versus In-Clinic Administration of Subcutaneous Nivolumab Through Cancer CARE (Connected Access and Remote Expertise) Beyond Walls (CCBW) Program ｜ II 期 ｜ 招募中
+- NCT04585750 ｜ The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE) ｜ I 期 / II 期 ｜ 招募中
+- NCT05334069 ｜ Collecting Blood Samples From Patients With and Without Cancer to Evaluate Tests for Early Cancer Detection ｜ 观察性 ｜ 招募中
+- NCT05612347 ｜ Colonoscopy vs Stool Testing for Older Adults With Colon Polyps ｜ N/A ｜ 招募中
+- NCT06270706 ｜ A Phase 1 Study of PLN-101095 in Adults With Advanced or Metastatic Solid Tumors ｜ I 期 ｜ 招募中
+- NCT02864485 ｜ Living Donor Liver Transplantation for Unresectable Colorectal Cancer Liver Metastases ｜ N/A ｜ 进行中·不再招募
+- NCT01815359 ｜ ICARuS Post-operative Intraperitoneal Chemotherapy (EPIC) and Hyperthermic Intraperitoneal Chemotherapy (HIPEC) After Optimal Cytoreductive Surgery (CRS) for Neoplasms of the Appendix, Colon or Rectum With Isolated Peritoneal Metastasis ｜ II 期 ｜ 进行中·不再招募
+- NCT05673148 ｜ Testing the Addition of Total Ablative Therapy to Usual Systemic Therapy Treatment for Limited Metastatic Colorectal Cancer, ERASur Trial ｜ II 期 ｜ 招募中
+- NCT06867822 ｜ Trial of ProAgio in Advanced/Metastatic Colorectal Cancer ｜ I 期 ｜ 暂停
+- NCT07059884 ｜ Distance-Based Exercise to Preserve Function and Prevent Disability ｜ N/A ｜ 招募中
+- NCT07283939 ｜ Studying the PAGODA Algorithm for Chemotherapy Dose Changes to Prevent Unplanned Treatment Delays ｜ N/A ｜ 招募中
+- NCT02441153 ｜ 直肠癌术前放化疗后手术切除时机 ｜ 观察性 ｜ 已完成
+- NCT07166263 ｜ NK510治疗胃癌和结直肠癌的安全性和有效性 ｜ 早期 I 期 ｜ 招募中
+- NCT07468071 ｜ 对已接受Opnurasib单药或联合其他研究治疗并持续获益的参与者的滚动研究 ｜ I 期 / II 期 ｜ 招募中
+- NCT02912559 ｜ 联合化疗联合或不联合阿替利珠单抗治疗III期结肠癌和DNA错配修复缺陷患者 ｜ III 期 ｜ 进行中·不再招募
+- NCT07852793 ｜ 基于邮寄FIT的外展干预 ｜ N/A ｜ 尚未招募
+- NCT06719206 ｜ 减少癌症治疗期间的久坐行为——RedSedCan研究 ｜ N/A ｜ 招募中
+- NCT02191761 ｜ SM04755在晚期结直肠癌、胃癌、肝癌或胰腺癌受试者中的安全性和药代动力学 ｜ I 期 ｜ 已完成
+- NCT05944237 ｜ HTL0039732在晚期实体瘤参与者中的研究 ｜ I 期 / II 期 ｜ 招募中
+- NCT07189871 ｜ 177Lu-BetaBart in Patients With Relapsed/Refractory, Locally Advanced Inoperable, or Metastatic Solid Tumors ｜ I 期 / II 期 ｜ 招募中
+- NCT04403022 ｜ da Vinci SP® Investigational Device Exemption Study in Colorectal Procedures ｜ N/A ｜ 进行中·不再招募
+- NCT07691489 ｜ A Study of Trastuzumab Deruxtecan (T-DXd) and Cetuximab in People With Colorectal Cancer ｜ II 期 ｜ 尚未招募
+- NCT04703829 ｜ Virtual Incision Robotically Assisted Surgical Device Use in Minimally Invasive Colectomy ｜ N/A ｜ 进行中·不再招募
+- NCT05176483 ｜ Study of Zanzalintinib in Combination With Immuno-Oncology or Other Agents in Participants With Solid Tumors ｜ I 期 ｜ 招募中
+- NCT05343013 ｜ TAS-102 With or Without Celecoxib in ctDNA-defined Minimal Residual Disease in Colorectal Cancer After Completion of Adjuvant Chemotherapy ｜ II 期 ｜ 进行中·不再招募
+- NCT00569127 ｜ Octreotide Acetate and Recombinant Interferon Alfa-2b or Bevacizumab in Treating Patients With Metastatic or Locally Advanced, High-Risk Neuroendocrine Tumor ｜ III 期 ｜ 进行中·不再招募
+- NCT07658196 ｜ TLR9 Immunotherapy for Peritoneal Carcinomatosis ｜ I 期 ｜ 招募中
+- NCT04185272 ｜ Butyrophilins Role in Colon Cancer ｜ N/A ｜ 招募中
+- NCT07328516 ｜ Natural History Study of Early Life Exposures in Agriculture (ELEA) ｜ 观察性 ｜ 邀请招募
+- NCT02465060 ｜ Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial) ｜ II 期 ｜ 进行中·不再招募
+- NCT06625775 ｜ Open-Label Study of BBO-10203 in Subjects With Advanced Solid Tumors ｜ I 期 ｜ 招募中
+- NCT06997497 ｜ A Clinical Study of Calderasib (MK-1084) With Targeted Therapy and Chemotherapy in People With Colorectal Cancer (MK-1084-012/KANDLELIT-012) ｜ III 期 ｜ 招募中
+- NCT01915225 ｜ Obtaining Solid Tumor Tissue From People Having Biopsy or Surgery for Certain Types of Cancer ｜ 观察性 ｜ 招募中
+- NCT03170960 ｜ Study of Cabozantinib Alone or in Combination With Atezolizumab to Subjects With Locally Advanced or Metastatic Solid Tumors ｜ I 期 ｜ 进行中·不再招募
+- NCT01846520 ｜ Family Caregiver Palliative Care Intervention in Supporting Caregivers of Patients With Stage II-IV Gastrointestinal, Gynecologic, Urologic and Lung Cancers ｜ N/A ｜ 已完成
+- NCT04751435 ｜ Developing New Educational Materials About Genetic Testing for a Diverse Group of Cancer Patients ｜ N/A ｜ 招募中
+- NCT05641896 ｜ Study of [18F]FAPI-74 PET in Patients With Gastrointestinal Cancers ｜ II 期 ｜ 已完成
+- NCT03233711 ｜ Nivolumab After Combined Modality Therapy in Treating Patients With High Risk Stage II-IIIB Anal Cancer ｜ III 期 ｜ 进行中·不再招募
+- NCT02997228 ｜ Testing the Addition of Atezolizumab to Combination Chemotherapy or Atezolizumab Alone for Metastatic Colon or Rectal Cancer, the COMMIT Study ｜ III 期 ｜ 进行中·不再招募
+- NCT06788171 ｜ PULSAR Combined With PD-1 Ab and Chemotherapy Plus Bev. for CRLM ｜ II 期 ｜ 招募中
+
+## 指南与共识（1 篇）
+
+- **加州职业消防员癌症筛查依从性及其个体与职业相关因素分析** ｜ Cancer Epidemiology, Biomarkers & Prevention : a Publication of the American Association for Cancer Research, Cosponsored By the American Society of Preventive Oncology · 2026-10 · [原文](https://pubmed.ncbi.nlm.nih.gov/42847818/)
+  - 首次系统刻画职业消防员多癌种筛查依从性，结直肠癌筛查率仅54%-68%；提示高危职业人群需针对性干预以缩小筛查缺口。
